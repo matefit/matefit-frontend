@@ -1,6 +1,6 @@
 {
-  "short_name": "MateFit!",
-  "name": "나에게 맞는 룸메이트를 Mate Fit!",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

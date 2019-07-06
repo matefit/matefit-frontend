@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import { AuthConsumer } from 'contexts/auth';
 
 class Main extends Component {
   render () {
     return (
-      <div class="main-container">
-        메인
-      </div>
+      <AuthConsumer>
+        {
+          ({state}) => (
+            <div class="main-container">
+              메인
+            </div>
+          )
+        }
+      </AuthConsumer>
     );
   }
 }
