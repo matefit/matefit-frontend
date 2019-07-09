@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { useAuth } from 'contexts/auth';
+import 'styles/Intro.scss';
 
 class Intro extends Component {
   render () {

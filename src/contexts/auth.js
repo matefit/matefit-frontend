@@ -24,10 +24,13 @@ class AuthProvider extends Component {
       //     console.error(err);
       //   }
       // });
+<<<<<<< HEAD
       axios({
         method: 'post',
         url: '/oauth/authorize?client_id=7588dfd6f7faa1279bc98bddb5501403&redirect_uri=http://localhost:3000/signup&response_type=code'
       })
+=======
+>>>>>>> e1a98e25d451d14449d084e46b603b68dc2441c0
     }
   }
 
