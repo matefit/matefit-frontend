@@ -1,21 +1,29 @@
 import React, { Component, createContext } from 'react'
 import axios from 'axios'
-const Context = createContext()
 
+const Context = createContext()
 const { Provider, Consumer: AuthConsumer } = Context
+const Kakao = window.Kakao
 
 class AuthProvider extends Component {
   state = {
-    token: null
+    kakaoToken: null
   }
 
   actions = {
-    setToken: token => {
-      axios({
-        method: 'post',
-        url: 'kapi.kakao.com/v1/api/talk/profile',
-        Authorization: ''
-      })
+    kakaoLogin: () => {
+      // Kakao.Auth.login({
+      //   success: authObj => {
+      //     this.setState({
+      //       kakaoToken: authObj.access_token,
+      //     })
+      //     console.log(authObj);
+      //     localStorage.setItem('accessToken', authObj.access_token)
+      //   },
+      //   fail: err => {
+      //     console.error(err);
+      //   }
+      // });
     }
   }
 
@@ -32,14 +40,14 @@ class AuthProvider extends Component {
 }
 
 function useAuth(WrappedComponent) {
-  return function UseAuth(props) {
+  return function UseAuth() {
     return (
       <AuthConsumer>
         {
           ({ state, actions }) => (
             <WrappedComponent
-              token={ state.token }
-              setToken={ actions.setToken }
+              kakaoToken={ state.kakaoToken }
+              kakaoLogin={ actions.kakaoLogin }
             />
           )
         }

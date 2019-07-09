@@ -7,7 +7,7 @@ class Main extends Component {
       <AuthConsumer>
         {
           ({state}) => (
-            <div class="main-container">
+            <div className="main-container">
               메인
             </div>
           )
