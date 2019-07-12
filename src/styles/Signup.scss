@@ -1,19 +1,35 @@
-body {
+.signup-container {
   background-color: #f0f2f1;
+  padding-bottom: 100px;
 }
 
-.signup-container {
+.signup {
+  font-family: 'KHNPHandotum', sans-serif;
+  font-size: 28px;
   width: 977px;
   margin: 0 auto;
   color: #707070;
-}
 
-form {
-  font-family: 'KHNPHandotum', sans-serif;
-  font-size: 28px;
+  button {
+    font-family: inherit;
+    border: none;
+    width: 376px;
+    height: 60px;
+    background-color: #eb6958;
+    color: white;
+    font-size: 28px;
+    display: block;
+    margin: 57px auto 0 auto;
+  }
+
+  .form-card {
+    padding-top: 50px;
+  }
 }
 
 .form-group {
+  display: flex;
+  align-items: center;
   margin: 24px auto;
 
   &:first-child {
@@ -31,9 +47,16 @@ form {
   color: inherit;
   height: 46px;
   font-size: 28px;
+  margin-left: 12px;
+  margin-right: 12px;
+  box-sizing: border-box;
 
   & #name {
     width: 300px;
+  }
+
+  &#email, &#residence {
+    flex: 1;
   }
 }
 

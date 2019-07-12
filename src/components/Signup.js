@@ -20,11 +20,11 @@ export default class Signup extends Component {
               </div>
               <div className="form-group">
                 <label htmlFor="birth">생년월일 : </label>
-                <input type="text" id="year" className="form-input" />
+                <input type="number" id="year" className="form-input" />
                 /
-                <input type="text" id="month" className="form-input" />
+                <input type="number" id="month" className="form-input" />
                 /
-                <input type="text" id="day" className="form-input" />
+                <input type="number" id="day" className="form-input" />
               </div>
               <div className="form-group">
                 <label htmlFor="email">이메일 : </label>
@@ -68,6 +68,7 @@ export default class Signup extends Component {
               <div className="tag">#흡연</div>
             </div>
           </FormCard>
+          <button>회원가입 완료</button>
         </form>
       </div>
     )
