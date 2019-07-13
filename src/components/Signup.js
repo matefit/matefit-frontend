@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
-import { FormCard } from 'components'
+import { FormCard, Nav } from 'components'
 import 'styles/Signup.scss'
 
 export default class Signup extends Component {
+  state = {
+    tags: [],
+    selectedTags: [],
+  }
+
   render() {
     return (
       <div className="signup-container">
+        <Nav />
         <form className="signup">
           <FormCard title="회원가입 기본정보">
             <div className="basic-info">
@@ -66,6 +72,9 @@ export default class Signup extends Component {
               <div className="tag">#흡연</div>
               <div className="tag selected">#흡연</div>
               <div className="tag">#흡연</div>
+            </div>
+            <div className="selected-tag-group">
+              <div className="selected-tag"></div>
             </div>
           </FormCard>
           <button>회원가입 완료</button>
