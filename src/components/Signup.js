@@ -47,7 +47,6 @@ export default class Signup extends Component {
             description="* 추가정보를 많이 할 수록 잘 맞는 룸메이트와 더 쉽게 매칭됩니다."
           >
             <div className="tag-group">
-              <div className="tag">#흡연</div>
               <div className="tag selected">#비흡연</div>
               <div className="tag">#흡연</div>
               <div className="tag selected">#흡연</div>

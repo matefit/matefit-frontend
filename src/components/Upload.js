@@ -12,7 +12,7 @@ export default class Upload extends Component {
     return (
       <div className="upload-container">
         <Nav />
-        <Header/>
+        <Header title="글 올리기" description="qabcd"/>
         <form className="upload">
           <FormCard title="당신이 찾는 Mate">
             <div className="basic-info">
