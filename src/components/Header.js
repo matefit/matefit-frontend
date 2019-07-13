@@ -4,7 +4,7 @@ class Header extends Component {
   render () {
     return (
       <div className="container">
-        메인
+        Header
       </div>
     );
   }
