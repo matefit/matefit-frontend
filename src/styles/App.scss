@@ -1,3 +1,4 @@
+/***** FormCard *****/
 .form-card {
   .top {
     display: inline-block;
@@ -9,7 +10,6 @@
   .bottom {
     display: inline-block;
     width: 977px;
-    height: 471px;
     background-color: white;
     border-bottom-left-radius: 50px;
     box-sizing: border-box;
@@ -24,8 +24,8 @@
     color: #ffffff;
   }
   .description {
-    float: right;
-    margin: 0 20px;
+    display: inline-block;
+    margin: 0px 40px;
     line-height: 88px;
     font-family: 'KHNPHanuoolim', sans-serif;
     font-size: 21px;
@@ -34,6 +34,7 @@
   }
 }
 
+/***** Nav *****/
 .nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -42,4 +43,37 @@
   position: relative;
   top: 0;
   left: 0;
+  font-family: 'KHNPHanuoolim', sans-serif;
+
+  .nav-container {
+    width: 80%;
+    min-width: 977px;
+    max-width: 1176px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .matefit-logo-nav {
+    width: 174px;
+    height: 28px;
+  }
+
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .nav-menu-item {
+    display: inline-block;
+    height: 100%;
+    line-height: 96px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #829fc1;
+    cursor: pointer;
+  }
 }
