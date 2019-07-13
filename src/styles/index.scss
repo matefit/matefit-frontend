@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'KHNPHandotum';
+  src: /*local('KHNPHandotum Bold'), local('KHNPHDBold'),*/
+      url('./fonts/KHNPHDBold.woff2') format('woff2'),
+      url('./fonts/KHNPHDBold.woff') format('woff'),
+      url('./fonts/KHNPHDBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KHNPHandotum';
+  src: /*local('KHNPHandotum'), local('KHNPHDRegular'),*/
+      url('./fonts/KHNPHDRegular.woff2') format('woff2'),
+      url('./fonts/KHNPHDRegular.woff') format('woff'),
+      url('./fonts/KHNPHDRegular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KHNPHanuoolim';
+  src: /*local('KHNPHanuoolim'), local('KHNPHURegular'),*/
+      url('./fonts/KHNPHURegular.woff2') format('woff2'),
+      url('./fonts/KHNPHURegular.woff') format('woff'),
+      url('./fonts/KHNPHURegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

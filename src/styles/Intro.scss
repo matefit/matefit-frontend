@@ -1,0 +1,100 @@
+$footerHeight: 192px;
+
+.intro-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.intro {
+  font-family: 'KHNPHandotum', sans-serif;
+  text-align: center;
+  padding-bottom: $footerHeight + 50px;
+
+  h2 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.33;
+    margin-top: 85px;
+    text-align: center;
+    color: #829fc1;
+  }
+    
+  .description {
+    font-size: 28px;
+    line-height: 1.43;
+    text-align: center;
+    color: #829fc1;
+    margin-top: 70px;
+  }
+
+  .kakao-login-btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .question {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    font-family: 'KHNPHanuoolim', sans-serif;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+}
+
+.matefit-logo {
+  width: 376px;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  h1 {
+    color: white;
+    font-size: 58px;
+    margin-left: 33px;
+    text-align: left;
+  }
+  
+  .block {
+    width: 376px;
+    height: 137px;
+    display: inline-block;
+  }
+
+  .top {
+    background-color: #809bbb;
+    border-top-right-radius: 50px;
+  }
+
+  .bottom {
+    margin-top: 8px;
+    background-color: #f0f2f1;
+    border-bottom-left-radius: 50px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: $footerHeight;
+  background-color: #707070;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 32px auto 0 auto;
+  padding: 0;
+  max-width: 900px;
+
+  li {
+    display: inline-block;
+    padding: 8px 20px;
+    font-family: 'KHNPHandotum', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+}
