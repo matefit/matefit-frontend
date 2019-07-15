@@ -10,7 +10,7 @@
     margin: 0 auto;
     color: #707070;
   
-    button {
+    .upload-submit {
       font-family: inherit;
       border: none;
       width: 376px;
@@ -40,6 +40,16 @@
     }
   }
   
+  .upload-description{
+    border:none;
+    width: 893px;
+    height: 392px;
+    font-family: 'KHNPHanuoolim';
+    font-size: 21px;
+    background-color: transparent;
+    padding: 42px 41px 37px 43px;
+  }
+
   .form-input {
     border: none;
     border-bottom: 4px solid #829fc1;
@@ -50,7 +60,7 @@
     margin-left: 12px;
     margin-right: 12px;
     box-sizing: border-box;
-  
+
     & #name {
       width: 300px;
     }
@@ -119,6 +129,31 @@
     }
   }
   
+  .setting-container{
+    padding-top: 55px;
+    padding-left: 49px;
+  }
+
+  .setting-content-group{
+    padding-bottom: 56px;
+  }
+
+  .radio-tag-group{
+    display: inline-block;
+    margin-right: 100px;
+  }
+
+  .radio-label{
+    margin-right: 18px;
+  }
+
+  input[type=radio]{
+    margin-right: 8px;
+  }
+
+  input[type=checkbox]{
+    margin-right: 8px;
+  }
   .upload .form-card .bottom {
     background-color: #f0f2f1;
   }
@@ -126,3 +161,41 @@
   .form-card:last-child {
     margin-top: 136px;
   }
+
+  .subject {
+    margin-right: 30px;
+  }
+  .post-period{
+    display: inline;
+  }
+
+  .illust{
+    width: 776px;
+    height: 276px;
+    border: solid 1px #50e3c2;
+    padding-top: 72px;
+    margin: 72px auto 77px auto;
+  }
+
+  .before-check-text{
+    width: 776px;
+    height: 40px;
+    font-family: 'KHNPHanuoolim';
+    font-size: 21px;
+    color: #707070;
+    line-height: 1.43;
+    margin:0px auto;
+    text-align: center;
+  }
+
+  .before-check-radio{
+    width: 776px;
+    height: 40px;
+    font-family: 'KHNPHanuoolim';
+    font-size: 21px;
+    line-height: 1.43;
+    color: #707070;
+    text-align: center;
+    margin:22px auto 43px auto;
+  }
+
