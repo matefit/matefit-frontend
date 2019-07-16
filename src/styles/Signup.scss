@@ -67,8 +67,7 @@
 }
 
 select {
-  /* width: 200px; 원하는 너비설정 */
-  padding: .3em .3em; /* 여백으로 높이 설정 */
+  padding: .3em .3em;
   font-family: inherit;
   color: inherit;
   font-size: 28px;
@@ -77,7 +76,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /*background: url(이미지 경로) no-repeat 95% 50%;  화살표 대체 */
+  background: url(../assets/img/drop-down-btn-down.png) no-repeat 95% 50%;
 
   &::-ms-expand {
     display: none;
