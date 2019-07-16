@@ -62,6 +62,8 @@
   }
 
   .nav-menu {
+    display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -69,11 +71,11 @@
   }
   .nav-menu-item {
     display: inline-block;
-    height: 100%;
-    line-height: 96px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #829fc1;
+    font-size: 24px;
+    padding-left: 42px;
+    padding-right: 42px;
+    color: #707070;
     cursor: pointer;
   }
+
 }

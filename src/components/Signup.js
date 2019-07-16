@@ -91,7 +91,7 @@ export default class Signup extends Component {
 
     return (
       <div className="signup-container">
-        <Nav />
+        <Nav signup />
         <form className="signup">
           <FormCard title="회원가입 기본정보">
             <div className="basic-info">
