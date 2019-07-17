@@ -1,7 +1,7 @@
 import React from 'react'
 
-const FormCard = ({ title, children }) => (
-  <div className="form-card-main">
+const FormCardMain = ({ title, children }) => (
+  <div className="form-card">
     <div className="top">
       <h2>{ title }</h2>
     </div>
@@ -11,4 +11,4 @@ const FormCard = ({ title, children }) => (
   </div>
 )
 
-export default FormCard
+export default FormCardMain
