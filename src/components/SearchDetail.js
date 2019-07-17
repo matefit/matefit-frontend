@@ -1,17 +1,40 @@
 import React, { Component } from 'react'
 import { Nav } from 'components'
+import illustLeft from 'assets/img/search_result_illust_left.png'
+import illustRight from 'assets/img/search_result_illust_right.png'
 import 'styles/SearchDetail.scss'
 
 export default class SearchDetail extends Component {
+  state = {
+    percentage: 50
+  }
+
   render() {
+    const { percentage } = this.state
+    
     return (
       <div className="search-detail-container">
         <Nav />
-        <h2>이 메이트가 당신과 맞을 확률은</h2>
-        <p className="matching-message">
-          괜찮은 룸메를 찾았어요! 벌써 반이나 맞는 걸요?<br />
-          주말엔 같이 영화도 즐길 수 있는 정도
-        </p>
+        <div className="result">
+          <h2>이 메이트가 당신과 맞을 확률은</h2> 
+          <svg width="380" height="380">
+            <circle r="190" cx="190" cy="190" strokeDasharray={ 1193.8 / 100 * percentage + ' 1193.8' } className="circle-graph" />
+            <circle r="160" cx="190" cy="190" className="circle-front" />
+            <text x="162" y="50" fill="#eb6958" className="percentage">
+              {percentage}%
+            </text>
+          </svg>
+          <p className="matching-message">
+            괜찮은 룸메를 찾았어요! 벌써 반이나 맞는 걸요?<br />
+            주말엔 같이 영화도 즐길 수 있는 정도
+          </p>
+        </div>
+        <div className="illust-container">
+          <div className="illust">
+            <img src={illustLeft} alt="택배를 받은 남성" className="illust-left" />
+            <img src={illustRight} alt="청소를 하고 있는 남성" className="illust-right" />  
+          </div>
+        </div>
         <div className="opponent-message">
           <div className="head">
             상대가 찾는 Mate
@@ -83,7 +106,7 @@ export default class SearchDetail extends Component {
           </ul>
         </div>
         <p className="match-description">
-          메이트 요청을 받았으며, 당신이 수락하면 상대와 당신의 연락처가 서로 공개됩니다.
+          메이트 요청을 받았으며, <span>당신이 수락하면 상대와 당신의 연락처가 서로 공개</span>됩니다.
         </p>
         <button>
           요청 수락하기

@@ -1,16 +1,47 @@
 .search-detail-container {
+  overflow-x: hidden;
+
   h2 {
+    margin-top: 150px;
     font-size: 42px;
     color: #eb6958;
     text-align: center;
     font-family: 'KHNPHandotum', sans-serif;
   }
 
+  .illust-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 320px;
+
+    .illust {
+      white-space: nowrap;
+      width: 100%;
+      min-width: 1000px;
+      max-width: 1470px;
+      height: 664px;
+    }
+
+  }
+
+  .illust-left {
+    float: left;
+    margin-left: 100px;
+  }
+
+  .illust-right {
+    float: right;
+  }
+
   .matching-message {
     text-align: center;
     font-family: 'KHNPHanuoolim', sans-serif;
     line-height: 1.43;
-    margin-bottom: 200px;
+    margin-top: 45px;
   }
 }
 
@@ -115,6 +146,10 @@
   font-size: 21px;
   text-align: center;
   margin-top: 85px; 
+
+  span {
+    text-decoration: underline;
+  }
 }
 
 button {
@@ -128,4 +163,36 @@ button {
   display: block;
   margin: 57px auto 176px auto;
   cursor: pointer;
+}
+
+@keyframes fillup {
+  to { stroke-dasharray: 1000 1193.8; }
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+svg {
+  transform: rotate(-40deg);
+  border-radius: 50%;
+
+  .percentage {
+    transform: rotate(40deg);
+    font-family: 'KHNPHandotum', sans-serif;
+    font-size: 90px;
+  }
+}
+
+.circle-graph {
+  stroke: #eb6958;
+  stroke-width: 380;
+  // stroke-dasharray: 0 1193.8;
+  // animation: fillup .8s ease 1 forwards;
+  fill: #707070;
+}
+
+.circle-front {
+  fill: white;
 }
