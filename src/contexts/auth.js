@@ -1,9 +1,7 @@
 import React, { Component, createContext } from 'react'
-import axios from 'axios'
 
 const Context = createContext()
 const { Provider, Consumer: AuthConsumer } = Context
-const Kakao = window.Kakao
 
 class AuthProvider extends Component {
   state = {
@@ -12,18 +10,7 @@ class AuthProvider extends Component {
   
   actions = {
     kakaoLogin: () => {
-      // Kakao.Auth.login({
-      //   success: authObj => {
-      //     this.setState({
-      //       kakaoToken: authObj.access_token,
-      //     })
-      //     console.log(authObj);
-      //     localStorage.setItem('accessToken', authObj.access_token)
-      //   },
-      //   fail: err => {
-      //     console.error(err);
-      //   }
-      // });
+      window.location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=7588dfd6f7faa1279bc98bddb5501403&redirect_uri=http://52.78.115.121/oauth/kakao&response_type=code';
     }
   }
 

@@ -34,50 +34,6 @@
   }
 }
 
-/***** Nav *****/
-.nav {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
-  width: 100%;
-  height: 96px;
-  position: relative;
-  top: 0;
-  left: 0;
-  font-family: 'KHNPHanuoolim', sans-serif;
-
-  .nav-container {
-    width: 80%;
-    min-width: 977px;
-    max-width: 1176px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .matefit-logo-nav {
-    width: 174px;
-    height: 28px;
-  }
-
-  .nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  .nav-menu-item {
-    display: inline-block;
-    height: 100%;
-    line-height: 96px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #829fc1;
-    cursor: pointer;
-  }
-}
-
 .form-card-main{
   .top {
     display: inline-block;
@@ -102,5 +58,162 @@
     line-height: 88px;
     text-align: left;
     color: #ffffff;
+  }
+}
+
+/***** Nav *****/
+.nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  width: 100%;
+  height: 96px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/***** Header *****/
+.header {
+  width: 100%;
+  height: 384px;
+  background-color: #f0f2f1;
+}
+
+.header-container{
+  width: 80%;
+  min-width: 977px;
+  max-width: 1176px;
+  padding-top: 128px;
+  margin : 0px auto;
+}
+
+.header-title{
+  font-family: 'KHNPHandotum';
+  font-size: 60px;
+  line-height: 1.08;
+  padding-bottom: 22px;
+  text-align: left;
+  color: #eb6958;
+}
+
+.header-content{
+  font-family: 'KHNPHanuoolim';
+  font-size: 21px;
+  text-align: left;
+  color: #707070;
+  font-family: 'KHNPHanuoolim', sans-serif;
+
+  .nav-container {
+    width: 80%;
+    min-width: 977px;
+    max-width: 1176px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .matefit-logo-nav {
+    width: 174px;
+    height: 28px;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .nav-menu-item {
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 42px;
+    padding-right: 42px;
+    color: #707070;
+    cursor: pointer;
+    position: relative;
+  }
+
+}
+
+
+/***** Notification *****/
+.noti-container {
+  position: absolute;
+  width: 542px;
+  margin-left: -30px;
+  margin-top: 20px;
+  z-index: 99;
+  // font-family: 'KHNPHandotum', sans-serif;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #829fc1;
+  }
+
+  .head {
+    height: 50px;
+    background-color: #829fc1;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'KHNPHandotum', sans-serif;
+    font-weight: bold;
+    border-top-right-radius: 40px;
+    padding-left: 27px;
+    cursor: default;
+
+    .close {
+      margin-top: 10px;
+      margin-right: 30px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  .noti-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'KHNPHanuoolim', sans-serif;
+    width: 100%;
+  }
+
+  .noti-list-item {
+    width: 100%;
+    height: 104px;
+    background-color: white;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    padding-left: 65px;
+    box-sizing: border-box;
+    line-height: 104px;
+
+    img {
+      margin-right: 30px;
+      vertical-align: middle;
+    }
+  }
+
+  .tail {
+    height: 44px;
+    background-color: #707070;
+    color: white;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom-left-radius: 40px;
+    padding-left: 27px;
   }
 }

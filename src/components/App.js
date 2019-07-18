@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
-import { Intro, Signup, Main, Upload } from 'components';
+import { Intro, Signup, Main, Upload, SearchDetail } from 'components';
 import { AuthProvider } from 'contexts/auth';
 import { KakaoAppKey } from 'config';
 import 'styles/App.scss';
@@ -33,6 +33,7 @@ function App() {
         <Route exact path="/signup" component={Signup} />
         <Route path="/main" component={Main} />
         <Route path="/upload" component={Upload} />
+        <Route path="/search/detail" component={SearchDetail} />
       </Router>
     </AuthProvider>
   );

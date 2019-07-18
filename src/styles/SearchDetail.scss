@@ -1,0 +1,198 @@
+.search-detail-container {
+  overflow-x: hidden;
+
+  h2 {
+    margin-top: 150px;
+    font-size: 42px;
+    color: #eb6958;
+    text-align: center;
+    font-family: 'KHNPHandotum', sans-serif;
+  }
+
+  .illust-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 320px;
+
+    .illust {
+      white-space: nowrap;
+      width: 100%;
+      min-width: 1000px;
+      max-width: 1470px;
+      height: 664px;
+    }
+
+  }
+
+  .illust-left {
+    float: left;
+    margin-left: 100px;
+  }
+
+  .illust-right {
+    float: right;
+  }
+
+  .matching-message {
+    text-align: center;
+    font-family: 'KHNPHanuoolim', sans-serif;
+    line-height: 1.43;
+    margin-top: 45px;
+  }
+}
+
+.opponent-message {
+  width: 977px;
+  margin: 0 auto 101px auto;
+  font-family: 'KHNPHanuoolim', sans-serif;
+
+  .head {
+    border-top-right-radius: 40px;
+    font-size: 28px;
+    background-color: #eb6958;
+    color: white;
+    padding: 31px 42px;
+  }
+  .tail {
+    border-bottom-left-radius: 40px;
+    line-height: 1.43;
+    font-size: 21px;
+    color: #707070;
+    background-color: #f0f2f1;
+    padding: 43px 42px;
+  }
+}
+
+.card-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 377px;
+  font-size: 36px;
+  color: #707070;
+  font-family: 'KHNPHandotum', sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+
+  .card-head, .card-tail {
+    height: 88px;
+    line-height: 84px;
+  }
+
+  .card-head, .card-detail, .card-tail {
+    padding-left: 43px;
+    font-family: inherit;
+    text-align: left;
+  }
+
+  .card-detail, .card-tail {
+    margin-top: 8px;
+  }
+
+  .card-head {
+    border-top-right-radius: 40px;
+  }
+
+  .card-detail {
+    height: 192px;
+    background-color: #f0f2f1;
+    padding-top: 28px;
+  }
+
+  .card-tail {
+    background-color: #f0f2f1;
+    border-bottom-left-radius: 40px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .label {
+    margin-top: 0;
+  }
+
+  .content {
+    margin-top: 31px;
+  }
+
+  &.my {
+    margin-right: 24px;
+
+    .card-head, .card-detail.match {
+      background-color: #829fc1;
+      color: white;
+    }
+  }
+
+  &.opponent {
+    .card-head, .card-detail.match {
+      background-color: #eb6958;
+      color: white;
+    }
+  }
+}
+
+.match-description {
+  font-family: 'KHNPHandotum', sans-serif;
+  font-size: 21px;
+  text-align: center;
+  margin-top: 85px; 
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: 'KHNPHandotum', sans-serif;
+  border: none;
+  width: 376px;
+  height: 60px;
+  background-color: #eb6958;
+  color: white;
+  font-size: 28px;
+  display: block;
+  margin: 57px auto 176px auto;
+  cursor: pointer;
+}
+
+@keyframes fillup {
+  to { stroke-dasharray: 1000 1193.8; }
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+svg {
+  transform: rotate(-40deg);
+  border-radius: 50%;
+
+  .percentage {
+    transform: rotate(40deg);
+    font-family: 'KHNPHandotum', sans-serif;
+    font-size: 90px;
+  }
+}
+
+.circle-graph {
+  stroke: #eb6958;
+  stroke-width: 380;
+  // stroke-dasharray: 0 1193.8;
+  // animation: fillup .8s ease 1 forwards;
+  fill: #707070;
+}
+
+.circle-front {
+  fill: white;
+}
