@@ -21,6 +21,14 @@
       display: block;
       margin: 57px auto 0 auto;
     }
+      
+    .illust{
+      width: 776px;
+      height: 276px;
+      border: solid 1px #50e3c2;
+      padding-top: 72px;
+      margin: 72px auto 77px auto;
+    }
   
     .form-card {
       padding-top: 50px;
@@ -74,61 +82,6 @@
     padding: 85px 43px;
   }
   
-  select {
-    /* width: 200px; 원하는 너비설정 */
-    padding: .3em .3em; /* 여백으로 높이 설정 */
-    font-family: inherit;
-    color: inherit;
-    font-size: 28px;
-    border: none;
-    border-bottom: 4px solid #829fc1; 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /*background: url(이미지 경로) no-repeat 95% 50%;  화살표 대체 */
-  
-    &::-ms-expand {
-      display: none;
-    }
-  }
-  
-  #gender {
-    width: 120px;
-  }
-  
-  #year, #month, #day {
-    width: 120px;
-  }
-  
-  .tag-group {
-    text-align: left;
-    width: 932px;
-    margin: 0 auto;
-    padding: 18px 0;
-  }
-  
-  .tag { 
-    display: inline-block;
-    margin: 12px 11.8px;
-    width: 160.5px;
-    height: 48px;
-    border-radius: 23.5px;
-    border: solid 1px #707070;
-    font-family: 'KHNPHanuoolim', sans-serif;
-    font-size: 19px;
-    line-height: 48px;
-    text-align: center;
-    color: #707070;
-    background-color: #f0f2f1;
-    cursor: pointer;
-  
-    &.selected {
-      font-size: 20px;
-      color: #ffffff;
-      background-color: #829fc1;
-    }
-  }
-  
   .setting-container{
     padding-top: 55px;
     padding-left: 49px;
@@ -169,13 +122,6 @@
     display: inline;
   }
 
-  .illust{
-    width: 776px;
-    height: 276px;
-    border: solid 1px #50e3c2;
-    padding-top: 72px;
-    margin: 72px auto 77px auto;
-  }
 
   .before-check-text{
     width: 776px;

@@ -70,7 +70,44 @@
   position: relative;
   top: 0;
   left: 0;
+  font-family: 'KHNPHanuoolim', sans-serif;
 }
+
+.nav-container {
+  width: 80%;
+  min-width: 977px;
+  max-width: 1176px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.matefit-logo-nav {
+  width: 174px;
+  height: 28px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nav-menu-item {
+  display: inline-block;
+  font-size: 24px;
+  padding-left: 42px;
+  padding-right: 42px;
+  color: #707070;
+  cursor: pointer;
+  position: relative;
+}
+
 
 /***** Header *****/
 .header {
@@ -101,43 +138,6 @@
   font-size: 21px;
   text-align: left;
   color: #707070;
-  font-family: 'KHNPHanuoolim', sans-serif;
-
-  .nav-container {
-    width: 80%;
-    min-width: 977px;
-    max-width: 1176px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .matefit-logo-nav {
-    width: 174px;
-    height: 28px;
-  }
-
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  .nav-menu-item {
-    display: inline-block;
-    font-size: 24px;
-    padding-left: 42px;
-    padding-right: 42px;
-    color: #707070;
-    cursor: pointer;
-    position: relative;
-  }
-
 }
 
 
