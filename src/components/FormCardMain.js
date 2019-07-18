@@ -1,7 +1,7 @@
 import React from 'react'
 
 const FormCardMain = ({ title, children }) => (
-  <div className="form-card">
+  <div className="form-card-main">
     <div className="top">
       <h2>{ title }</h2>
     </div>
