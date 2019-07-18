@@ -20,6 +20,7 @@
     font-size: 28px;
     display: block;
     margin: 57px auto 0 auto;
+    cursor: pointer;
   }
 
   .form-card {
@@ -50,12 +51,13 @@
   margin-left: 12px;
   margin-right: 12px;
   box-sizing: border-box;
+  outline: none;
 
   & #name {
     width: 300px;
   }
 
-  &#email, &#residence {
+  &#phone, &#email, &#residence {
     flex: 1;
   }
 }
@@ -65,8 +67,7 @@
 }
 
 select {
-  /* width: 200px; 원하는 너비설정 */
-  padding: .3em .3em; /* 여백으로 높이 설정 */
+  padding: .3em .3em;
   font-family: inherit;
   color: inherit;
   font-size: 28px;
@@ -75,7 +76,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /*background: url(이미지 경로) no-repeat 95% 50%;  화살표 대체 */
+  background: url(../assets/img/drop-down-btn-down.png) no-repeat 95% 50%;
 
   &::-ms-expand {
     display: none;
@@ -116,6 +117,30 @@ select {
     font-size: 20px;
     color: #ffffff;
     background-color: #829fc1;
+  }
+}
+
+.selected-tag-group {
+  font-family: 'KHNPHanuoolim', sans-serif;
+  font-size: 21px;
+  color: #707070;
+  padding-left: 36px;
+  padding-right: 36px;
+  
+  .selected-tag {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    &::before {
+      content: '#';
+    }
+
+    .delete {
+      margin-left: 30px;
+      float: right;
+      cursor: pointer;
+    }
   }
 }
 
