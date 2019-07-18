@@ -34,6 +34,33 @@
   }
 }
 
+.form-card-main{
+  .top {
+    display: inline-block;
+    width: 400px;
+    height: 158px;
+    background-color: #829fc1;
+    border-top-right-radius: 50px;
+  }
+  .bottom {
+    display: inline-block;
+    width: 400px;
+    height: 478px;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    box-sizing: border-box;
+  }
+  h2 {
+    float: left;
+    margin: 0;
+    margin-left: 43px;
+    font-size: 28px;
+    line-height: 88px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
 /***** Nav *****/
 .nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);

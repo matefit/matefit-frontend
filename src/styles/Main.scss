@@ -1,0 +1,229 @@
+.main-container{
+    background-image: url('../assets/img2/background-square-down.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.main-header{
+    width: 1920px;
+    height: 668px;
+    margin : 0px auto;
+    background-image: url('../assets/img2/background-square-up.png');
+    background-repeat: no-repeat;
+}
+
+.main-header-text{
+    width: 777px;
+    height: 150px;
+    padding-top : 273px;
+    padding-left :  320px;
+    font-size: 70px;
+    line-height: 1.09;
+    color: #707070;
+    font-family: 'KHNPHandotum';
+}
+
+.main-header-description{
+    width: 600px;
+    height: 48px;
+    margin-top: 16px;
+    padding-left: 327px;
+    font-family: 'KHNPHandotum';
+    font-size: 21px;
+    line-height: 1.1;
+    text-align: left;
+    color: #707070;
+}
+
+.illust{
+    width: 604.5px;
+    height: 374.5px;
+    position: absolute;
+    right: 311.5px;
+    top:394.9px;
+}
+
+.main-search-group{
+    width: 1280px;
+    height: 661px;
+    margin: 0px auto;
+    border: solid 1px #50e3c2;
+
+}
+
+.main-search-bar{
+    width: 1280px;
+    height: 190px;
+    opacity: 0.8;
+    background-color: #f0f2f1;
+    margin-bottom: 105px;
+}
+
+.main-search-bar-title{
+    font-family: 'KHNPHandotum';
+    font-size: 24px;
+    color: #707070;
+    padding-left: 109px;
+    padding-top:31px;
+    padding-bottom: 16px;
+}
+
+.main-search-bar-selectors{
+    padding-left: 92px;   
+
+    div{
+        display: inline-block;
+        padding-right: 30px;
+    }
+
+    button{
+        width: 177px;
+        height: 70px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
+        background-color: #eb6958;
+        color: #ffffff;
+        font-size: 32px;
+    }   
+}
+
+.radio-tag-group{
+    display: inline-block;
+    padding: .76em .3em; /* 여백으로 높이 설정 */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-size: 26px;
+  }
+
+  .radio-label{
+    margin-right: 18px;
+  }
+
+select {
+    /* width: 200px; 원하는 너비설정 */
+    padding: .76em .3em; /* 여백으로 높이 설정 */
+    font-family: inherit;
+    font-size: 26px;
+    color: inherit;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*background: url(이미지 경로) no-repeat 95% 50%;  화살표 대체 */
+  
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+
+.main-search-tag-title{
+    width: 395px;
+    height: 56px;
+    font-family: 'KHNPHandotum';
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
+
+.main-search-tag-selected{
+    width: 1266px;
+    height: 60px;
+    margin: 29px auto 32px auto;
+    border: solid 1px #50e3c2;
+    
+}
+
+.main-search-tags{
+    width: 1280px;
+    height: 190px;
+    opacity: 0.1;
+    border-radius: 50px;
+    background-color: #829fc1;
+}
+
+.main-matefit-info{
+    height: 280px;
+    margin : 155px auto 198px auto;
+
+}
+
+.main-matefit-info-element{
+    display: inline-block;
+    text-align: center;
+    padding-left: 54px;
+    padding-right: 54px;
+    margin: 0px auto;
+    
+    div{
+        font-size: 30px;
+        text-align: center;
+        color: #989797;
+        line-height: 1.07;
+        font-family: 'KHNPHandotum';
+    }
+
+    .info-img-wrapper{
+        width:150px;
+        position: relative;
+        
+    }
+
+    .element-text{
+        width: 202px;
+        height: 63px;
+        position: absolute;
+        top:14%;
+       // left: 30%;
+        font-size: 60px;
+        text-align: center;
+        color: #829fc1;
+        span{
+            font-size: 40px;
+        }
+    }
+
+}
+
+
+.left{
+    width: 155.4px;
+    height: 157.1px;
+    padding-bottom: 34px;
+}
+
+.center{
+    width: 205px;
+    height: 111px;
+    padding-bottom: 61px;
+   
+}
+
+.right{
+    width: 104px;
+    height: 104px;
+    padding-bottom: 45px;
+    padding-right: 40px;
+}
+
+.line{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.background-square-up{
+    width: 1376.6px;
+    height: 588.3px;
+    float: left;
+}
+
