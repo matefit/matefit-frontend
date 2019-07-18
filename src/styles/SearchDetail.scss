@@ -70,129 +70,129 @@
 .card-container {
   margin: 0 auto;
   text-align: center;
-    
-  .card {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 377px;
-    font-size: 36px;
-    color: #707070;
-    font-family: 'KHNPHandotum', sans-serif;
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: top;
+}
 
-    .card-head, .card-tail {
-      height: 88px;
-      line-height: 84px;
-    }
+.card {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 377px;
+  font-size: 36px;
+  color: #707070;
+  font-family: 'KHNPHandotum', sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
 
-    .card-head, .card-detail, .card-tail {
-      padding-left: 43px;
-      font-family: inherit;
-      text-align: left;
-    }
-
-    .card-detail, .card-tail {
-      margin-top: 8px;
-    }
-
-    .card-head {
-      border-top-right-radius: 40px;
-    }
-
-    .card-detail {
-      height: 192px;
-      background-color: #f0f2f1;
-      padding-top: 28px;
-    }
-
-    .card-tail {
-      background-color: #f0f2f1;
-      border-bottom-left-radius: 40px;
-      margin-top: 8px;
-      cursor: pointer;
-    }
-
-    .label {
-      margin-top: 0;
-    }
-
-    .content {
-      margin-top: 31px;
-    }
-
-    &.my {
-      margin-right: 24px;
-
-      .card-head, .card-detail.match {
-        background-color: #829fc1;
-        color: white;
-      }
-    }
-
-    &.opponent {
-      .card-head, .card-detail.match {
-        background-color: #eb6958;
-        color: white;
-      }
-    }
+  .card-head, .card-tail {
+    height: 88px;
+    line-height: 84px;
   }
 
-  .match-description {
-    font-family: 'KHNPHandotum', sans-serif;
-    font-size: 21px;
-    text-align: center;
-    margin-top: 85px; 
-
-    span {
-      text-decoration: underline;
-    }
+  .card-head, .card-detail, .card-tail {
+    padding-left: 43px;
+    font-family: inherit;
+    text-align: left;
   }
 
-  button {
-    font-family: 'KHNPHandotum', sans-serif;
-    border: none;
-    width: 376px;
-    height: 60px;
-    background-color: #eb6958;
-    color: white;
-    font-size: 28px;
-    display: block;
-    margin: 57px auto 176px auto;
+  .card-detail, .card-tail {
+    margin-top: 8px;
+  }
+
+  .card-head {
+    border-top-right-radius: 40px;
+  }
+
+  .card-detail {
+    height: 192px;
+    background-color: #f0f2f1;
+    padding-top: 28px;
+  }
+
+  .card-tail {
+    background-color: #f0f2f1;
+    border-bottom-left-radius: 40px;
+    margin-top: 8px;
     cursor: pointer;
   }
 
-  @keyframes fillup {
-    to { stroke-dasharray: 1000 1193.8; }
+  .label {
+    margin-top: 0;
   }
 
-  .result {
-    text-align: center;
-    margin-bottom: 250px;
+  .content {
+    margin-top: 31px;
   }
 
-  svg {
-    transform: rotate(-40deg);
-    border-radius: 50%;
+  &.my {
+    margin-right: 24px;
 
-    .percentage {
-      transform: rotate(40deg);
-      font-family: 'KHNPHandotum', sans-serif;
-      font-size: 90px;
+    .card-head, .card-detail.match {
+      background-color: #829fc1;
+      color: white;
     }
   }
 
-  .circle-graph {
-    stroke: #eb6958;
-    stroke-width: 380;
-    // stroke-dasharray: 0 1193.8;
-    // animation: fillup .8s ease 1 forwards;
-    fill: #707070;
+  &.opponent {
+    .card-head, .card-detail.match {
+      background-color: #eb6958;
+      color: white;
+    }
   }
+}
 
-  .circle-front {
-    fill: white;
+.match-description {
+  font-family: 'KHNPHandotum', sans-serif;
+  font-size: 21px;
+  text-align: center;
+  margin-top: 85px; 
+
+  span {
+    text-decoration: underline;
   }
+}
+
+button {
+  font-family: 'KHNPHandotum', sans-serif;
+  border: none;
+  width: 376px;
+  height: 60px;
+  background-color: #eb6958;
+  color: white;
+  font-size: 28px;
+  display: block;
+  margin: 57px auto 176px auto;
+  cursor: pointer;
+}
+
+// @keyframes fillup {
+//   to { stroke-dasharray: 1000 1193.8; }
+// }
+
+.result {
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+svg {
+  transform: rotate(-40deg);
+  border-radius: 50%;
+
+  .percentage {
+    transform: rotate(40deg);
+    font-family: 'KHNPHandotum', sans-serif;
+    font-size: 90px;
+  }
+}
+
+.circle-graph {
+  stroke: #eb6958;
+  stroke-width: 380;
+  // stroke-dasharray: 0 1193.8;
+  // animation: fillup .8s ease 1 forwards;
+  fill: #707070;
+}
+
+.circle-front {
+  fill: white;
 }
