@@ -12,6 +12,16 @@ class AuthProvider extends Component {
   
   actions = {
     kakaoLogin: () => {
+      window.location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=7588dfd6f7faa1279bc98bddb5501403&redirect_uri=http://52.78.115.121/oauth/kakao&response_type=code';
+      
+      // axios({
+      //   method: 'get',
+      //   url: 'https://kauth.kakao.com/oauth/authorize?client_id=7588dfd6f7faa1279bc98bddb5501403&redirect_uri=http://52.78.115.121/oauth/kakao&response_type=code',
+      // }).then((response) => {
+      //   console.log(response)
+      // }).catch(err => {
+      //   console.error(err)
+      // })
       // Kakao.Auth.login({
       //   success: authObj => {
       //     this.setState({
