@@ -1,0 +1,264 @@
+.search-container {
+  .illust {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    pointer-events: none;
+    z-index: 1;
+
+    img {
+      display: inline-block;
+      text-align: center;
+      margin-left: 500px;
+    }
+  }
+
+  .search {
+    margin: 0 auto;
+    margin-top: 160px;
+    width: 100%;
+    min-width: 1350px;
+    max-width: 1350px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .search-filter {
+    width: 376px;
+    // display: inline-block;
+    float: left;
+
+    .head {
+      height: 88px;
+      background-color: #829fc1;
+      border-top-right-radius: 40px;
+      font-family: 'KHNPHandotum', sans-serif;
+      margin-bottom: 8px;
+
+      h2 {
+        font-size: 36px;
+        line-height: 88px;
+        color: #ffffff;
+        margin: 0;
+        margin-left: 43px;
+      }
+    }
+
+    .body {
+      background-color: #f0f2f1;
+      margin-bottom: 8px;
+      padding-top: 38px;
+      padding-bottom: 166px;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      h3 {
+        color: #707070;
+        font-weight: normal;
+        font-size: 21px;
+        font-family: 'KHNPHanuoolim', sans-serif;
+        margin: 0;
+      }
+
+      .tag {
+        display: inline-block;
+      }
+
+      .filter-group {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 40px;
+
+        span {
+          display: inline-block;
+          font-family: 'KHNPHanuoolim', sans-serif;
+          font-size: 21px;
+          color: #707070;
+        }
+
+        .filter-label {
+          width: 87px;
+        }
+        
+        .filter-content {
+          width: 149px;
+        }
+
+        .delete-btn {
+          float: right;
+          vertical-align: top;
+          cursor: pointer;
+        }
+
+      }
+
+      .tags-selected {
+        margin-top: 80px;
+        .tag {
+          margin-top: 16px;
+          width: 100%;
+
+          .tag-block {
+            width: 250px;
+            padding-left: 39px;
+            display: inline-block;
+            border-radius: 23.5px;
+            border: solid 1px #707070;
+            background-color: #f0f2f1;
+            font-size: 21px;
+            color: #707070;
+            line-height: 43px;
+            box-sizing: border-box;
+          }
+
+          .delete-btn {
+            vertical-align: top;
+            margin-left: 30px;
+            cursor: pointer;
+            float: right;
+          }
+        }
+      }
+
+      .tags-more {
+        margin-top: 69px;
+
+        .tag {
+          padding: 0 22px;
+          margin-top: 16px;
+          display: inline-block;
+          border-radius: 23.5px;
+          border: solid 1px #707070;
+          background-color: #f0f2f1;
+          font-size: 21px;
+          color: #707070;
+          line-height: 43px;
+          box-sizing: border-box;
+
+          &:nth-child(2n) {
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+
+    .tail {
+      height: 88px;
+      background-color: #f0f2f1;
+      border-bottom-left-radius: 40px;
+    }
+  }
+
+  .search-result {
+    z-index: 10;
+    width: calc(100% - 451px);
+    padding-top: 97px;
+    padding-left: 75px;
+    float: right;
+
+    * {
+      box-sizing: border-box;
+    }
+  }
+}
+
+.search-card {
+  display: inline-block;
+  width: 400px;
+  height: 460.7px;
+  margin-right: 45px;
+  margin-bottom: 38px;
+  box-shadow: 5px 5px 10px 0 rgba(112, 112, 112, 0.39);
+  border: solid 1px #707070;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+  .head {
+    border-top-right-radius: 100px;
+    background-color: #F1F4F8;
+    height: 100px;
+    box-sizing: border-box;
+    padding-left: 42px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    h3 {
+      max-height: 100px;
+      margin: 0;
+      font-family: 'KHNPHandotum', sans-serif;
+      font-size: 32px;
+      line-height: 1.25;
+      color: #829fc1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .body {
+    padding: 42px 49px;
+    height: 273px;
+    font-size: 21px;
+    color: #707070;
+
+    .card-content {
+      margin-bottom: 38px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    // .tags-same {
+    //   .tag {
+    //     line-height: 34px;
+    //     padding: 0 16px;
+    //     margin-right: 14px;
+    //     margin-bottom: 7px;
+    //     display: inline-block;
+    //     border-radius: 50px;
+    //     border: solid 1px #829fc1;
+    //     font-size: 18px;
+    //     color: #829fc1;
+    //   }
+    // }
+
+    h4 {
+      font-size: 28px;
+      font-family: 'KHNPHandotum', sans-serif;
+      line-height: 1.07;
+      color: #707070;
+      margin: 0;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 21px;
+      font-family: 'KHNPHanuoolim', sans-serif;
+      color: #707070;
+      margin: 0;
+      margin-top: 13px;
+    }
+
+    button {
+      width: 250px;
+      height: 68px;
+      background-color: #829fc1;
+      border: none;
+      font-size: 28px;
+      color: #ffffff;
+      font-family: 'KHNPHandotum', sans-serif;
+      font-weight: normal;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
