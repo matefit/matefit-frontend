@@ -19,6 +19,9 @@ const SearchCard = ({title, position, percentage}) => {
             { percentage }%
           </p>
         </div>
+        <button>
+          자세히 보기
+        </button>
       </div>
     </div>
   )

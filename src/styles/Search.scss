@@ -171,7 +171,7 @@
 .search-card {
   display: inline-block;
   width: 400px;
-  height: 400px;
+  height: 460.7px;
   margin-right: 45px;
   margin-bottom: 38px;
   box-shadow: 5px 5px 10px 0 rgba(112, 112, 112, 0.39);
@@ -182,15 +182,18 @@
   .head {
     border-top-right-radius: 100px;
     background-color: #F1F4F8;
-    height: 127px;
+    height: 100px;
     box-sizing: border-box;
     padding-left: 42px;
     padding-right: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     h3 {
-      width: 100%;
+      max-height: 100px;
       margin: 0;
-      padding-top: 26px;
       font-family: 'KHNPHandotum', sans-serif;
       font-size: 32px;
       line-height: 1.25;
@@ -201,19 +204,18 @@
   }
   
   .body {
-    padding: 22px 49px;
+    padding: 42px 49px;
     height: 273px;
     font-size: 21px;
     color: #707070;
 
     .card-content {
-      margin-bottom: 18px;
+      margin-bottom: 38px;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
     // .tags-same {
-      
     //   .tag {
     //     line-height: 34px;
     //     padding: 0 16px;
@@ -242,6 +244,21 @@
       color: #707070;
       margin: 0;
       margin-top: 13px;
+    }
+
+    button {
+      width: 250px;
+      height: 68px;
+      background-color: #829fc1;
+      border: none;
+      font-size: 28px;
+      color: #ffffff;
+      font-family: 'KHNPHandotum', sans-serif;
+      font-weight: normal;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      cursor: pointer;
     }
   }
 }

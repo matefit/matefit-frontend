@@ -91,37 +91,37 @@ export default class Search extends Component {
           </aside>
           <div className="search-result">
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이"
               position="서울특별시 강남구"
               percentage={50}
             />
             <SearchCard
-              title="저희집에서 잠깐 함께 하실분 구합니다~!"
+              title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
