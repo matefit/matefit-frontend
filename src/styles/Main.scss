@@ -1,11 +1,17 @@
 .main-container{
-    background-image: url('../assets/img2/background-square-down.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-        
+    width: 100%;
+
+    .background-square-up{
+        width: 1376.6px;
+        height: 588.3px;
+        position: absolute;
+        top: 100px;
+        z-index: -1;
+    }
+
     .main-header{
-        width: 1920px;
-        height: 668px;
+        width: 1280px;
+        //height: 668px;
         margin : 0px auto;
         background-repeat: no-repeat;    
 
@@ -14,32 +20,35 @@
             height: 374.5px;
             position: absolute;
             right: 311.5px;
-            top:394.9px;
+            top:419.5px;
+        }
+
+        .main-header-text{
+            width: 777px;
+            height: 150px;
+            padding-top : 273px;
+            font-size: 70px;
+            line-height: 1.09;
+            color: #707070;
+            font-family: 'KHNPHandotum';
+        }
+        .main-header-description{
+            width: 600px;
+            height: 48px;
+            margin-top: 18px;
+            padding-left: 7px;
+            padding-bottom: 205px;
+            font-family: 'KHNPHandotum';
+            font-size: 21px;
+            line-height: 1.1;
+            text-align: left;
+            color: #707070;
         }
     }
 
-    .main-header-text{
-        width: 777px;
-        height: 150px;
-        padding-top : 273px;
-        padding-left :  320px;
-        font-size: 70px;
-        line-height: 1.09;
-        color: #707070;
-        font-family: 'KHNPHandotum';
-    }
 
-    .main-header-description{
-        width: 600px;
-        height: 48px;
-        margin-top: 16px;
-        padding-left: 327px;
-        font-family: 'KHNPHandotum';
-        font-size: 21px;
-        line-height: 1.1;
-        text-align: left;
-        color: #707070;
-    }
+
+    
 
     .main-search-group{
         width: 1280px;
@@ -218,12 +227,5 @@
         padding-left: 80px;
         padding-right: 80px;
     }
-
-    .background-square-up{
-        width: 1376.6px;
-        height: 588.3px;
-        float: left;
-    }
-
 
 }

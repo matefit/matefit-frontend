@@ -6,7 +6,9 @@ import illustSittingGirls from 'assets/img2/illust-sitting-girls.png';
 import infoLeft from 'assets/img2/info-left.png';
 import infoCenter from 'assets/img2/info-center.png';
 import infoRight from 'assets/img2/info-right.png';
-import mainLine from 'assets/img2/main-line.png'
+import mainLine from 'assets/img2/main-line.png';
+import backgroundSquareUp from 'assets/img2/background-square-up.png';
+import btnDown from 'assets/img2/btn-down.png';
 class Main extends Component {
   render() {
     return (
@@ -15,6 +17,7 @@ class Main extends Component {
           ({ state }) => (
             <div className="main-container">
               <Nav />
+              <img className="background-square-up" src={backgroundSquareUp} />
               <div className="main-header">
 
                 <div className="main-header-text">
