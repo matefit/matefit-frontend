@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
-import { Intro, Signup, Main, Upload, SearchDetail } from 'components';
+import { Intro, Signup, Main, Upload, Search, SearchDetail } from 'components';
 import { AuthProvider } from 'contexts/auth';
 import { KakaoAppKey } from 'config';
 import 'styles/App.scss';
@@ -11,7 +11,7 @@ const Kakao = window.Kakao;
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
     <Route {...rest} render={props => (
-      !localStorage.getItem('accessToken') ? 
+      !localStorage.getItem('access_token') ? 
         <Redirect to={{
           pathname: '/',
           state: { from: props.location }
@@ -33,6 +33,7 @@ function App() {
         <Route exact path="/signup" component={Signup} />
         <Route path="/main" component={Main} />
         <Route path="/upload" component={Upload} />
+        <Route exact path="/search" component={Search} />
         <Route path="/search/detail" component={SearchDetail} />
       </Router>
     </AuthProvider>

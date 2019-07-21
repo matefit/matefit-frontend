@@ -1,17 +1,39 @@
 import React, { Component, createContext } from 'react'
+import axios from 'axios'
 
 const Context = createContext()
 const { Provider, Consumer: AuthConsumer } = Context
+const Kakao = window.Kakao
 
 class AuthProvider extends Component {
   state = {
-    kakaoToken: null
+    token: null
   }
   
   actions = {
     kakaoLogin: () => {
-      window.location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=7588dfd6f7faa1279bc98bddb5501403&redirect_uri=http://52.78.115.121/oauth/kakao&response_type=code';
-    }
+      Kakao.Auth.login({
+        success: authObj => {
+          axios.post('/oauth/kakao', {
+            access_token: authObj.access_token
+          })
+          .then(response => {
+            const accessToken = response.data.access_token
+            this.setState({
+              token: accessToken
+            })
+            localStorage.setItem('access_token', accessToken)
+            window.location.href = '/signup'
+          })
+          .catch(err => {
+            console.error(err)
+          })
+        },
+        fail: err => {
+          console.error(err);
+        }
+      });
+      }
   }
 
   render () {
@@ -33,7 +55,7 @@ function useAuth(WrappedComponent) {
         {
           ({ state, actions }) => (
             <WrappedComponent
-              kakaoToken={ state.kakaoToken }
+              token={ state.token }
               kakaoLogin={ actions.kakaoLogin }
             />
           )

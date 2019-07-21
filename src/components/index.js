@@ -11,6 +11,7 @@ import Main from './Main';
 
 import Search from './Search';
 import SearchFilter from './SearchFilter';
+import SearchCard from './SearchCard';
 
 import SearchDetail from './SearchDetail';
 import SearchDetailGraph from './SearchDetailGraph';
@@ -32,7 +33,7 @@ import Upload from './Upload';
 export {
   Header, Nav, MateCard, FormCard, FormCardMain, Notification,
   Intro, Signup, Main,
-  Search, SearchFilter,
+  Search, SearchFilter, SearchCard,
   SearchDetail, SearchDetailGraph, SearchDetailDescription, SearchDetailCompare,
   MyPage, MyPageMenu, MyBookmark, MyComment, MySent, MyReceive, MyRecent, MyInfo,
   Upload,
