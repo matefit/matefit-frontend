@@ -6,7 +6,9 @@ import illustSittingGirls from 'assets/img2/illust-sitting-girls.png';
 import infoLeft from 'assets/img2/info-left.png';
 import infoCenter from 'assets/img2/info-center.png';
 import infoRight from 'assets/img2/info-right.png';
-import mainLine from 'assets/img2/main-line.png'
+import mainLine from 'assets/img2/main-line.png';
+import backgroundSquareUp from 'assets/img2/background-square-up.png';
+import btnDown from 'assets/img2/btn-down.png';
 class Main extends Component {
   render() {
     return (
@@ -15,6 +17,7 @@ class Main extends Component {
           ({ state }) => (
             <div className="main-container">
               <Nav />
+              <img className="background-square-up" src={backgroundSquareUp} />
               <div className="main-header">
 
                 <div className="main-header-text">
@@ -36,28 +39,28 @@ class Main extends Component {
                     <span>방타입</span>
                   </div>
                   <div className="main-search-bar-selectors">
-                    <div>
+                    <div className="main-search-bar-select-box">
                       <select id="rigion" name="rigion" onChange={this.handleChangeInput}>
                         <option defaultValue value="everywhere">모든위치</option>
                         <option value="seoul">서울</option>
                       </select>
                     </div>
-                    <div className="main-search-bar-selector">
-                      <div className="radio-tag-group">
-                        <label className="radio-label"><input type="radio" name="birth-visibility" value="public" />여성</label>
-                        <label className="radio-label"><input type="radio" name="birth-visibility" value="private" defaultChecked />남성</label>
-                        <label className="radio-label"><input type="radio" name="birth-visibility" value="private" defaultChecked />무관</label>
-                      </div>
+
+                    <div className="main-search-bar-select-box gender">
+                      <label className="radio-label"><input type="radio" name="birth-visibility" value="public" />여성</label>
+                      <label className="radio-label"><input type="radio" name="birth-visibility" value="private" defaultChecked />남성</label>
+                      <label className="radio-label"><input type="radio" name="birth-visibility" value="private" defaultChecked />무관</label>
                     </div>
-                    <div className="main-search-bar-selector">
-                      <select id="rigion" name="rigion" onChange={this.handleChangeInput}>
-                        <option defaultValue value="everywhere">모든위치</option>
+
+                    <div className="main-search-bar-select-box">
+                      <select id="room-type" name="room-type" htmlFor="room-type" onChange={this.handleChangeInput}>
+                        <option defaultValue value="everywhere">모두</option>
                         <option value="seoul">서울</option>
                       </select>
                     </div>
-                    <div className="main-search-bar-selector">
-                      <button>Search</button>
-                    </div>
+
+                    <button>Search</button>
+
                   </div>
 
 
@@ -67,33 +70,68 @@ class Main extends Component {
                     <div style={{ fontSize: '18px', marginBottom: '8px' }}>*설정 하시면 잘 맞는 룸메이트와 더 쉽게 매칭됩니다.</div>
                     내가 원하는 룸메
                   </div>
-                  <div className="main-search-tag-selected"></div>
-                  <div className="main-search-tags"></div>
-                  <div className="main-matefit-info">
-                    <div className="main-matefit-info-element">
-                      <img className="left" src={infoLeft}></img>
-                      <div>나와 맞는<br />룸메이트 찾기</div>
+                  <div className="main-search-tag-selected">
+                    <div className="tag selected">#비흡연</div>
+                    <div className="tag selected">#애완견 가능</div>
+                    <div className="tag selected">#직장인</div>
+
+                  </div>
+                  <button className="tags-drop"><img src={btnDown}></img></button>
+                  <div className="main-search-tags">
+                    <div className="tag unselected">#비흡연</div>
+                    <div className="tag unselected">#애완견 가능</div>
+                    <div className="tag unselected">#직장인</div>
+                    <div className="tag selected">#비흡연</div>
+                    <div className="tag selected">#애완견 가능</div>
+                    <div className="tag selected">#직장인</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+                    <div className="tag unselected">#빠른입주</div>
+
+                  </div>
+                </div>
+                <div className="main-matefit-info">
+                  <div className="main-matefit-info-element">
+                    <img className="left" src={infoLeft}></img>
+                    <div>나와 맞는<br />룸메이트 찾기</div>
+                  </div>
+                  <img className="line" src={mainLine}></img>
+                  <div className="main-matefit-info-element">
+                    <div className="info-img-wrapper">
+                      <img className="center" src={infoCenter}></img>
+                      <div className="element-text">2094<span>명</span></div>
                     </div>
-                    <img className="line" src={mainLine}></img>
-                    <div className="main-matefit-info-element">
-                      <div className="info-img-wrapper">
-                        <img className="center" src={infoCenter}></img>
-                        <div className="element-text">2094<span>명</span></div>
-                      </div>
-                      <div>MateFit! 이용자 수</div>
+                    <div>MateFit! 이용자 수</div>
+                  </div>
+                  <img className="line" src={mainLine}></img>
+                  <div className="main-matefit-info-element">
+                    <div className="info-img-wrapper">
+                      <img className="right" src={infoRight}></img>
+                      <div className="element-text">149<span>명</span></div>
                     </div>
-                    <img className="line" src={mainLine}></img>
-                    <div className="main-matefit-info-element">
-                      <div className="info-img-wrapper">
-                        <img className="right" src={infoRight}></img>
-                        <div className="element-text">149<span>명</span></div>
-                      </div>
-                      <div>메이트를 만난<br />이용자 수</div>
-                    </div>
+                    <div>메이트를 만난<br />이용자 수</div>
+                  </div>
+                  <div className="formcards-group">
+                    <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
+                    <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
+                    <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
 
                   </div>
                 </div>
               </div>
+
             </div>
           )
         }

@@ -1,11 +1,20 @@
 .main-container{
-    background-image: url('../assets/img2/background-square-down.png');
+    width: 100%;
+    background-image: url(../assets/img2/background-square-down.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-        
+
+    .background-square-up{
+        width: 1376.6px;
+        height: 588.3px;
+        position: absolute;
+        top: 100px;
+        z-index: -1;
+    }
+
     .main-header{
-        width: 1920px;
-        height: 668px;
+        width: 1280px;
+        //height: 668px;
         margin : 0px auto;
         background-repeat: no-repeat;    
 
@@ -14,46 +23,41 @@
             height: 374.5px;
             position: absolute;
             right: 311.5px;
-            top:394.9px;
+            top:419.5px;
         }
-    }
 
-    .main-header-text{
-        width: 777px;
-        height: 150px;
-        padding-top : 273px;
-        padding-left :  320px;
-        font-size: 70px;
-        line-height: 1.09;
-        color: #707070;
-        font-family: 'KHNPHandotum';
-    }
-
-    .main-header-description{
-        width: 600px;
-        height: 48px;
-        margin-top: 16px;
-        padding-left: 327px;
-        font-family: 'KHNPHandotum';
-        font-size: 21px;
-        line-height: 1.1;
-        text-align: left;
-        color: #707070;
+        .main-header-text{
+            width: 777px;
+            height: 150px;
+            padding-top : 273px;
+            font-size: 70px;
+            line-height: 1.09;
+            color: #707070;
+            font-family: 'KHNPHandotum';
+        }
+        .main-header-description{
+            width: 600px;
+            height: 48px;
+            margin-top: 18px;
+            padding-left: 7px;
+            padding-bottom: 205px;
+            font-family: 'KHNPHandotum';
+            font-size: 21px;
+            line-height: 1.1;
+            text-align: left;
+            color: #707070;
+        }
     }
 
     .main-search-group{
         width: 1280px;
-        height: 661px;
         margin: 0px auto;
-        border: solid 1px #50e3c2;
-
     }
 
     .main-search-bar{
         width: 1280px;
         height: 190px;
-        opacity: 0.8;
-        background-color: #f0f2f1;
+        background-color: rgba(240, 242, 241, 0.8);
         margin-bottom: 105px;
     }
 
@@ -69,9 +73,20 @@
     .main-search-bar-selectors{
         padding-left: 92px;   
 
-        div{
+        .main-search-bar-select-box{
+            padding: 1.4em 1.5em; /* 여백으로 높이 설정 */
             display: inline-block;
-            padding-right: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
+            border: solid 1px #707070;
+            background-color: #ffffff;
+            
+            
+        }
+        
+        .gender{
+            width: 300px;
         }
 
         button{
@@ -82,7 +97,42 @@
             background-color: #eb6958;
             color: #ffffff;
             font-size: 32px;
+            margin-left: 46px;
         }   
+
+        .radio-label{
+            margin-right: 18px;
+            font-family: inherit;
+            font-size: 26px;
+            color:#707070;    
+        }
+    
+        select {
+            /* width: 200px; 원하는 너비설정 */
+            font-family: inherit;
+            font-size: 26px;
+            background-color: transparent;
+            border:transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /*background: url(이미지 경로) no-repeat 95% 50%;  화살표 대체 */
+            color:#707070;    
+            background: url(../assets/img2/btn-down.png) no-repeat 70% 50%;
+            background-size: 17px 8.5px;        
+           
+            &::-ms-expand {
+            display: none;
+            }
+
+            &#rigion {
+                width: 205px;
+            }
+
+            &#room-type {
+                width: 148px;
+            }
+        }
     }
 
     .radio-tag-group{
@@ -95,63 +145,79 @@
         font-size: 26px;
     }
 
-    .radio-label{
-        margin-right: 18px;
-    }
 
-    select {
-        /* width: 200px; 원하는 너비설정 */
-        padding: .76em .3em; /* 여백으로 높이 설정 */
-        font-family: inherit;
-        font-size: 26px;
-        color: inherit;
-        border-radius: 10px;
-        box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
-        border: solid 1px #707070;
-        background-color: #ffffff;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        /*background: url(이미지 경로) no-repeat 95% 50%;  화살표 대체 */
-    
-        &::-ms-expand {
-        display: none;
+    .main-search-tag-group{
+        .main-search-tag-title{
+            width: 395px;
+            height: 56px;
+            font-family: 'KHNPHandotum';
+            font-size: 28px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.07;
+            letter-spacing: normal;
+            text-align: left;
+            color: #707070;
         }
-    }
-
-
-    .main-search-tag-title{
-        width: 395px;
-        height: 56px;
-        font-family: 'KHNPHandotum';
-        font-size: 28px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.07;
-        letter-spacing: normal;
-        text-align: left;
-        color: #707070;
-    }
-
-    .main-search-tag-selected{
-        width: 1266px;
-        height: 60px;
-        margin: 29px auto 32px auto;
-        border: solid 1px #50e3c2;
+    
+        .main-search-tag-selected{
+            width: 1200px;
+            height: 60px;
+            margin: 29px 0px 32px 0px;
+            display: inline-block;
+            .tag{
+                margin: 4px 5px;
+            }
+            
+        }
         
-    }
+        button.tags-drop img{
+            margin-left: 8px;
+            width:40px;
+        }
 
-    .main-search-tags{
-        width: 1280px;
-        height: 190px;
-        opacity: 0.1;
-        border-radius: 50px;
-        background-color: #829fc1;
+        .main-search-tags{
+            width: 1206px;
+            border-radius: 50px;
+            background-color: rgba(130, 159, 193, 0.1);
+            padding : 7px 37px;
+
+            .tag{
+                margin: 15px 10px;
+            } 
+        }
+
+        .tag{
+            width: 150px;
+            height: 55px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 56px;
+            text-align: center;
+            &.selected{
+                border: solid 1px #829fc1;
+                background-color: #829fc1;
+                color:white;
+              
+            }
+
+            &.unselected{
+                border: solid 1px #707070;
+                background-color: #ffffff;
+                color: #707070;
+            }
+
+        }
+
+     
+
+       
     }
 
     .main-matefit-info{
-        height: 280px;
+        width: 100%;
         margin : 155px auto 198px auto;
 
     }
@@ -218,12 +284,38 @@
         padding-left: 80px;
         padding-right: 80px;
     }
+    .formcards-group{
+        margin: 214px auto 0px auto;
+        padding-bottom: 386px;
 
-    .background-square-up{
-        width: 1376.6px;
-        height: 588.3px;
-        float: left;
     }
 
+    .form-card-main:nth-child(1){
+        .top{
+            background-color: #abd1e6;
+        }
+        button{
+            background-color: #abd1e6;
+        }
+    }
+    
+    .form-card-main:nth-child(2){
+        margin: 0px 40px;
+        .top{
+            background-color: #eb6958;
+        }
+        button{
+            background-color: #eb6958;
+        }
+    }
 
+    .form-card-main:nth-child(3){
+        .top{
+            background-color: #829fc1;
+        }
+        button{
+            background-color: #829fc1;
+        }
+   
+    }
 }

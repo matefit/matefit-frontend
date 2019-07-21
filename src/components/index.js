@@ -2,6 +2,7 @@ import Header from './Header';
 import Nav from './Nav';
 import MateCard from './MateCard';
 import FormCard from './FormCard';
+import FormCardMain from './FormCardMain';
 import Notification from './Notification';
 
 import Intro from './Intro';
@@ -30,7 +31,7 @@ import Upload from './Upload';
 
 
 export {
-  Header, Nav, MateCard, FormCard, Notification,
+  Header, Nav, MateCard, FormCard, FormCardMain, Notification,
   Intro, Signup, Main,
   Search, SearchFilter, SearchCard,
   SearchDetail, SearchDetailGraph, SearchDetailDescription, SearchDetailCompare,
