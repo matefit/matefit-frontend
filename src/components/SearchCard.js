@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SearchCard = ({title, position, percentage}) => {
+const SearchCard = ({title, position, percentage, sent, receive, matched }) => {
   return (
-    <div className="search-card">
+    <div className={"search-card" + (sent ? " sent" : receive ? " receive" : matched ? " matched" : "")}>
       <div className="head">
         <h3>{ title }</h3>
       </div>

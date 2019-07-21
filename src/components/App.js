@@ -11,7 +11,7 @@ const Kakao = window.Kakao;
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
     <Route {...rest} render={props => (
-      !localStorage.getItem('accessToken') ? 
+      !localStorage.getItem('access_token') ? 
         <Redirect to={{
           pathname: '/',
           state: { from: props.location }

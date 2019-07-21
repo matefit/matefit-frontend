@@ -261,4 +261,34 @@
       cursor: pointer;
     }
   }
+  
+  &.sent {
+    .head, button {
+      background-color: #abd1e6;
+      color: white;
+    }
+    .head h3 {
+      color: white;
+    }
+  }
+
+  &.receive {
+    .head, button {
+      background-color: #eb6958;
+      color: white;
+    }
+    .head h3 {
+      color: white;
+    }
+  }
+
+  &.matched {
+    .head, button {
+      background-color: #829fc1;
+      color: white;
+    }
+    .head h3 {
+      color: white;
+    }
+  }
 }

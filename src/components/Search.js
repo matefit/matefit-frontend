@@ -90,17 +90,17 @@ export default class Search extends Component {
             <div className="tail"></div>
           </aside>
           <div className="search-result">
-            <SearchCard
+            <SearchCard sent
               title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
-            <SearchCard
+            <SearchCard receive
               title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
-            <SearchCard
+            <SearchCard matched
               title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
