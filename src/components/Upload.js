@@ -65,10 +65,7 @@ export default class Upload extends Component {
               </div>
             </div>
           </FormCard>
-          <div className="illust">
-            <h3>일러스트</h3>
-          </div>
-
+   
           <div className="before-check-text">
             글을 직접 작성하고 설정을 완료하였으며 <span className="before-text-highlight">당신의 카드</span>와 함께 글을 업로드 합니다.
             </div>

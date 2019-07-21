@@ -57,27 +57,7 @@
     background-color: transparent;
     padding: 42px 41px 37px 43px;
   }
-
-  .form-input {
-    border: none;
-    border-bottom: 4px solid #829fc1;
-    font-family: inherit;
-    color: inherit;
-    height: 46px;
-    font-size: 28px;
-    margin-left: 12px;
-    margin-right: 12px;
-    box-sizing: border-box;
-
-    & #name {
-      width: 300px;
-    }
-  
-    &#email, &#residence {
-      flex: 1;
-    }
-  }
-  
+ 
   .basic-info {
     padding: 85px 43px;
   }
@@ -130,7 +110,7 @@
     font-size: 21px;
     color: #707070;
     line-height: 1.43;
-    margin:0px auto;
+    margin:100px auto 0px auto;
     text-align: center;
   }
 
