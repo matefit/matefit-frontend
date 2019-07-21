@@ -1,0 +1,36 @@
+//'KHNPHandotum'
+.mypage-container{
+    .header-text{
+        opacity: 0.5;
+        font-family: 'KHNPHandotum';
+        font-size: 130px;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: left;
+        color: #707070;
+        position: absolute;
+        top:333px;
+        right: 311px;
+    }
+    .my-page{
+        margin: 0 auto;
+        margin-top: 166px;
+        width: 100%;
+        min-width: 1350px;
+        max-width: 1350px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .my-card-group {
+        z-index: 10;
+        width: calc(100% - 451px);
+        padding-left: 120px;
+        float: right;
+        * {
+          box-sizing: border-box;
+        }
+      }
+}
