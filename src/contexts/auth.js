@@ -23,6 +23,7 @@ class AuthProvider extends Component {
               token: accessToken
             })
             localStorage.setItem('access_token', accessToken)
+            window.location.href = '/signup'
           })
           .catch(err => {
             console.error(err)
