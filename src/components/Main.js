@@ -108,7 +108,7 @@ class Main extends Component {
                     <div>나와 맞는<br />룸메이트 찾기</div>
                   </div>
                   <img className="line" src={mainLine}></img>
-                  <div className="maingi-matefit-info-element">
+                  <div className="main-matefit-info-element">
                     <div className="info-img-wrapper">
                       <img className="center" src={infoCenter}></img>
                       <div className="element-text">2094<span>명</span></div>
