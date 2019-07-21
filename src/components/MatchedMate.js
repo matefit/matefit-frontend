@@ -4,7 +4,7 @@ import illust from 'assets/img/illust_04.png'
 import deleteBtn from 'assets/img/delete-btn.png'
 import 'styles/MyPage.scss'
 
-export default class MyBookmark extends Component {
+export default class MatchedMate extends Component {
   render() {
     return (
       <div className="mypage-container">
@@ -12,24 +12,24 @@ export default class MyBookmark extends Component {
         <Header title="마이페이지" />
         <div className="header-text">MAIT FIT!</div>
         <div className="my-page">
-          <MyPageMenu menu="bookmark"/>
+          <MyPageMenu menu="matched"/>
           <div className="my-card-group">
-            <SearchCard
+            <SearchCard matched
               title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
-            <SearchCard
+            <SearchCard matched
               title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}
             />
-            <SearchCard
-              title="메이"
+            <SearchCard matched
+              title="디프만"
               position="서울특별시 강남구"
               percentage={50}
             />
-            <SearchCard
+            <SearchCard matched
               title="메이트 닉네임"
               position="서울특별시 강남구"
               percentage={50}

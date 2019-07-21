@@ -158,7 +158,7 @@
 /***** Header *****/
 .header {
   width: 100%;
-  height: 384px;
+  height: 350px;
   background-color: #f0f2f1;
 }
 
@@ -261,5 +261,43 @@
     font-weight: bold;
     border-bottom-left-radius: 40px;
     padding-left: 27px;
+  }
+}
+
+/***** MyPage Menu *****/
+.my-page-munu{
+  display: inline-block;
+  .my-page-menu-wrapper{
+    width: 250px;
+    border-radius: 50px;
+    border: solid 1px #829fc1;
+    padding: 67px 29px;
+  }
+
+  .menu-element{
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    font-family: 'KHNPHandotum';
+    font-size: 28px;
+    line-height: 60px;
+    margin-bottom : 33px;
+    a{
+      text-align: left;
+      margin-left: 28px;
+      color: #abd1e6;
+    }
+
+    &.selected{
+      background-color: #829fc1;
+      a{
+        color: #ffffff;
+      }
+    }
+  }
+
+  .illust{
+    margin-top: 74px;
+    margin-left: 52px;
   }
 }

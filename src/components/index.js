@@ -26,7 +26,7 @@ import MySent from './MySent';
 import MyReceive from './MyReceive';
 import MyRecent from './MyRecent';
 import MyInfo from './MyInfo';
-
+import MatchedMate from './MatchedMate';
 import Upload from './Upload';
 
 
@@ -36,5 +36,5 @@ export {
   Search, SearchFilter, SearchCard,
   SearchDetail, SearchDetailGraph, SearchDetailDescription, SearchDetailCompare,
   MyPage, MyPageMenu, MyBookmark, MyComment, MySent, MyReceive, MyRecent, MyInfo,
-  Upload,
+  Upload,MatchedMate
 }
