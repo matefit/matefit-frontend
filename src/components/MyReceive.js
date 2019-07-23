@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Nav, Header, SearchCard,MyPageMenu } from 'components'
-import illust from 'assets/img/illust_04.png'
-import deleteBtn from 'assets/img/delete-btn.png'
+import { Nav, Header, SearchCard, MyPageMenu } from 'components'
 import 'styles/MyPage.scss'
 
 export default class MyReceive extends Component {

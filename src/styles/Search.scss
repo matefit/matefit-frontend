@@ -153,6 +153,11 @@
       background-color: #f0f2f1;
       border-bottom-left-radius: 40px;
     }
+
+    .filter-illust {
+      padding-top: 111px;
+      text-align: center;
+    }
   }
 
   .search-result {
@@ -175,7 +180,7 @@
   margin-right: 45px;
   margin-bottom: 38px;
   box-shadow: 5px 5px 10px 0 rgba(112, 112, 112, 0.39);
-  border: solid 1px #707070;
+  // border: solid 1px #707070;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
 
@@ -247,12 +252,12 @@
     }
 
     button {
-      width: 250px;
+      width: 222.1px;
       height: 68px;
-      background-color: #829fc1;
-      border: none;
-      font-size: 28px;
-      color: #ffffff;
+      border: solid 2px #829fc1;
+      background-color: #ffffff;
+      font-size: 21px;
+      color: #829fc1;
       font-family: 'KHNPHandotum', sans-serif;
       font-weight: normal;
       margin: 0 auto;
@@ -263,32 +268,50 @@
   }
   
   &.sent {
-    .head, button {
+    .head {
       background-color: #abd1e6;
       color: white;
     }
+
     .head h3 {
       color: white;
+    }
+
+    button {
+      border: solid 2px #abd1e6;
+      color: #abd1e6;
     }
   }
 
   &.receive {
-    .head, button {
+    .head {
       background-color: #eb6958;
       color: white;
     }
+
     .head h3 {
       color: white;
+    }
+
+    button {
+      border: solid 2px #eb6958;
+      color: #eb6958;
     }
   }
 
   &.matched {
-    .head, button {
+    .head {
       background-color: #829fc1;
       color: white;
     }
+
     .head h3 {
       color: white;
+    }
+
+    button {
+      border: solid 2px #829fc1;
+      color: #829fc1;
     }
   }
 }

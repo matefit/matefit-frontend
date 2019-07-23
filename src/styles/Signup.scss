@@ -9,6 +9,10 @@
     margin: 0 auto;
     color: #707070;
 
+    a {
+      text-decoration: none;
+    }
+
     button {
       font-family: inherit;
       border: none;
@@ -39,6 +43,7 @@
       margin-bottom: 0;
     }
   }
+  
 
   .form-input {
     border: none;
@@ -52,11 +57,15 @@
     box-sizing: border-box;
     outline: none;
 
-    & #name {
-      width: 300px;
+    &#name, &#nickname {
+      width: 220px;
     }
 
-    &#phone, &#email, &#residence {
+    &#phoneFirst, &#phoneMiddle, &#phoneLast {
+      width: 150px;
+    }
+
+    &#email, &#residence {
       flex: 1;
     }
   }

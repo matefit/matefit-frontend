@@ -96,8 +96,10 @@
             box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
             background-color: #eb6958;
             color: #ffffff;
+            border: none;
             font-size: 32px;
             margin-left: 46px;
+            cursor: pointer;
         }   
 
         .radio-label{
@@ -171,10 +173,18 @@
             }
             
         }
-        
-        button.tags-drop img{
-            margin-left: 8px;
-            width:40px;
+
+
+        button.tags-drop {
+            border: none;
+            background: none;
+            cursor: pointer;
+            outline: none;
+            text-align: center;
+            img {
+                margin-left: 8px;
+                width:40px;
+            }
         }
 
         .main-search-tags{
@@ -208,17 +218,12 @@
                 background-color: #ffffff;
                 color: #707070;
             }
-
         }
-
-     
-
-       
     }
 
     .main-matefit-info{
         width: 100%;
-        margin : 155px auto 198px auto;
+        margin : 155px auto 0 auto;
 
     }
 
