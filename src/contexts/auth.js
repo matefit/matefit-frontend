@@ -34,6 +34,24 @@ class AuthProvider extends Component {
         }
       });
     },
+
+    signup: (email, name, nickname, birthday, phone, sex, location, roomType, hashtags) => {
+      axios.post('/api/account/signup', {
+        email: email,
+        name: name,
+        nickname: nickname,
+        birthday: birthday,
+        phone: phone,
+        sex: sex,
+        location: location,
+        roomType: null,
+        hashtags: [],
+      }).then(response => {
+        console.log(response)
+      }).catch(err => {
+        console.error(err)
+      })
+    },
     
     logout: () => {
       localStorage.removeItem('access_token')
@@ -61,6 +79,7 @@ function useAuth(WrappedComponent) {
             <WrappedComponent
               token={ state.token }
               kakaoLogin={ actions.kakaoLogin }
+              signup={ actions.signup }
               logout={ actions.logout }
             />
           )
