@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Nav, Header, SearchCard } from 'components'
 import illust from 'assets/img/illust_04.png'
+import illustGirlHoldingPhone from 'assets/img2/illust_05.png';
 import deleteBtn from 'assets/img/delete-btn.png'
 import 'styles/Search.scss'
 
@@ -88,6 +89,9 @@ export default class Search extends Component {
               </div>
             </div>
             <div className="tail"></div>
+            <div className="filter-illust">
+              <img src={illustGirlHoldingPhone} alt="" />
+            </div>
           </aside>
           <div className="search-result">
             <SearchCard sent

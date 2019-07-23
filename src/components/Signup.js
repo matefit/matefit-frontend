@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { FormCard, Nav } from 'components'
 import 'styles/Signup.scss'
 
@@ -33,11 +34,14 @@ export default class Signup extends Component {
     ],
     form: {
       name: '',
+      nickname: '',
       gender: 'male',
       year: '',
       month: '',
       day: '',
-      phone: '',
+      phoneFirst: '',
+      phoneMiddle: '',
+      phoneLast: '',
       email: '',
       residence: '',
     },
@@ -55,6 +59,10 @@ export default class Signup extends Component {
         tags: newTags
       })
     }
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
   }
 
   handleChangeInput = (e) => {
@@ -92,12 +100,14 @@ export default class Signup extends Component {
     return (
       <div className="signup-container">
         <Nav signup />
-        <form className="signup">
+        <form className="signup" onSubmit={this.handleSubmit}>
           <FormCard title="회원가입 기본정보">
             <div className="basic-info">
               <div className="form-group">
                 <label htmlFor="name">이름 : </label>
                 <input type="text" id="name" name="name" className="form-input" onChange={this.handleChangeInput} />
+                <label htmlFor="nickname">닉네임 : </label>
+                <input type="text" id="nickname" name="nickname" className="form-input" onChange={this.handleChangeInput} />
                 <label htmlFor="gender">성별 : </label>
                 <select id="gender" name="gender" onChange={this.handleChangeInput}>
                   <option defaultValue value="male">남성</option>
@@ -123,7 +133,15 @@ export default class Signup extends Component {
               </div>
               <div className="form-group">
                 <label htmlFor="phone">연락처 : </label>
-                <input type="text" id="phone" name="phone" className="form-input"
+                <input type="text" id="phoneFirst" name="phoneFirst" className="form-input"
+                  onChange={this.handleChangeInput}
+                />
+                -
+                <input type="text" id="phoneMiddle" name="phoneMiddle" className="form-input"
+                  onChange={this.handleChangeInput}
+                />
+                -
+                <input type="phone" id="phoneLast" name="phoneLast" className="form-input"
                   onChange={this.handleChangeInput}
                 />
               </div>
@@ -158,7 +176,9 @@ export default class Signup extends Component {
               }
             </div>
           </FormCard>
-          <button>회원가입 완료</button>
+          <Link to="/main">
+            <button>회원가입 완료</button>
+          </Link>
         </form>
       </div>
     )

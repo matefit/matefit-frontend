@@ -33,7 +33,11 @@ class AuthProvider extends Component {
           console.error(err);
         }
       });
-      }
+    },
+    
+    logout: () => {
+      localStorage.removeItem('access_token')
+    }
   }
 
   render () {
@@ -57,6 +61,7 @@ function useAuth(WrappedComponent) {
             <WrappedComponent
               token={ state.token }
               kakaoLogin={ actions.kakaoLogin }
+              logout={ actions.logout }
             />
           )
         }

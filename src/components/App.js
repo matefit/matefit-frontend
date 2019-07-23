@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { Intro, Signup, Main, Upload, Search, SearchDetail,MyBookmark,MyReceive,MySent,MatchedMate } from 'components';
 import { AuthProvider } from 'contexts/auth';
 import { KakaoAppKey } from 'config';
@@ -30,15 +30,18 @@ function App() {
     <AuthProvider>
       <Router>
         <Route exact path="/" component={Intro} />
-        <Route exact path="/signup" component={Signup} />
-        <Route path="/main" component={Main} />
-        <Route path="/upload" component={Upload} />
-        <Route exact path="/search" component={Search} />
-        <Route path="/search/detail" component={SearchDetail} />
-        <Route path="/mypage/bookmark" component={MyBookmark} />
-        <Route path="/mypage/receive" component={MyReceive} />
-        <Route path="/mypage/sent" component={MySent} />
-        <Route path="/mypage/matched" component={MatchedMate} />
+        <PrivateRoute exact path="/signup" component={Signup} />
+        <PrivateRoute path="/main" component={Main} />
+        <PrivateRoute path="/upload" component={Upload} />
+        <PrivateRoute exact path="/search" component={Search} />
+        <PrivateRoute path="/search/detail" component={SearchDetail} />
+        <Switch>
+          <Redirect from="/mypage" to="/mypage/bookmark" />
+        </Switch>
+        <PrivateRoute path="/mypage/bookmark" component={MyBookmark} />
+        <PrivateRoute path="/mypage/receive" component={MyReceive} />
+        <PrivateRoute path="/mypage/sent" component={MySent} />
+        <PrivateRoute path="/mypage/matched" component={MatchedMate} />
       </Router>
     </AuthProvider>
   );

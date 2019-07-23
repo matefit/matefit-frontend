@@ -20,7 +20,7 @@
   
   .result {
     text-align: center;
-    margin-bottom: 250px;
+    margin-bottom: 140px;
   }
   
   svg {
@@ -55,32 +55,44 @@
     font-family: 'KHNPHandotum', sans-serif;
   }
 
-  .illust-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
-    top: 320px;
+  // .illust-container {
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: center;
+  //   margin: 0 auto;
+  //   right: 0;
+  //   left: 0;
+  //   top: 320px;
 
-    .illust {
-      white-space: nowrap;
-      width: 100%;
-      min-width: 1000px;
-      max-width: 1470px;
-      height: 664px;
-    }
+  //   .illust {
+  //     white-space: nowrap;
+  //     width: 100%;
+  //     min-width: 1000px;
+  //     max-width: 1470px;
+  //     height: 664px;
+  //   }
 
-  }
+  // }
+
+  // .illust-left {
+  //   float: left;
+  //   margin-left: 100px;
+  // }
+
+  // .illust-right {
+  //   float: right;
+  // }
 
   .illust-left {
-    float: left;
-    margin-left: 100px;
+    position: absolute;
+    left: -90px;
+    top: -50px;
   }
 
   .illust-right {
-    float: right;
+    position: absolute;
+    right: -85px;
+    bottom: -50px;
   }
 
   .matching-message {
@@ -126,6 +138,7 @@
   font-size: 36px;
   color: #707070;
   font-family: 'KHNPHandotum', sans-serif;
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
@@ -153,6 +166,7 @@
     height: 192px;
     background-color: #f0f2f1;
     padding-top: 28px;
+    box-sizing: border-box;
   }
 
   .card-tail {

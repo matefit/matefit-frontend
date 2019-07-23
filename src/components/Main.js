@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, FormCardMain, FormCard } from 'components';
+import { Nav, FormCardMain } from 'components';
 import { AuthConsumer } from 'contexts/auth';
 import 'styles/Main.scss';
 import illustSittingGirls from 'assets/img2/illust-sitting-girls.png';
@@ -17,7 +17,7 @@ class Main extends Component {
           ({ state }) => (
             <div className="main-container">
               <Nav />
-              <img className="background-square-up" src={backgroundSquareUp} />
+              <img className="background-square-up" src={backgroundSquareUp} alt="" />
               <div className="main-header">
 
                 <div className="main-header-text">
@@ -27,7 +27,7 @@ class Main extends Component {
                 <div className="main-header-description">
                   나와 메이트의 카드를 비교하여 쉽게 매칭정도를 알려드려요!
                 </div>
-                <img className="illust" src={illustSittingGirls} />
+                <img className="illust" src={illustSittingGirls} alt="" />
 
 
               </div>
@@ -76,7 +76,7 @@ class Main extends Component {
                     <div className="tag selected">#직장인</div>
 
                   </div>
-                  <button className="tags-drop"><img src={btnDown}></img></button>
+                  <button className="tags-drop"><img src={btnDown} alt="" /></button>
                   <div className="main-search-tags">
                     <div className="tag unselected">#비흡연</div>
                     <div className="tag unselected">#애완견 가능</div>
@@ -104,21 +104,21 @@ class Main extends Component {
                 </div>
                 <div className="main-matefit-info">
                   <div className="main-matefit-info-element">
-                    <img className="left" src={infoLeft}></img>
+                    <img className="left" src={infoLeft} alt="" />
                     <div>나와 맞는<br />룸메이트 찾기</div>
                   </div>
-                  <img className="line" src={mainLine}></img>
+                  <img className="line" src={mainLine} alt="" />
                   <div className="main-matefit-info-element">
                     <div className="info-img-wrapper">
-                      <img className="center" src={infoCenter}></img>
+                      <img className="center" src={infoCenter} alt="" />
                       <div className="element-text">2094<span>명</span></div>
                     </div>
                     <div>MateFit! 이용자 수</div>
                   </div>
-                  <img className="line" src={mainLine}></img>
+                  <img className="line" src={mainLine} alt="" />
                   <div className="main-matefit-info-element">
                     <div className="info-img-wrapper">
-                      <img className="right" src={infoRight}></img>
+                      <img className="right" src={infoRight} alt="" />
                       <div className="element-text">149<span>명</span></div>
                     </div>
                     <div>메이트를 만난<br />이용자 수</div>
@@ -127,7 +127,6 @@ class Main extends Component {
                     <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
                     <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
                     <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
-
                   </div>
                 </div>
               </div>

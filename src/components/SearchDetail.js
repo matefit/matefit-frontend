@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Nav } from 'components'
-import illustLeft from 'assets/img/search_result_illust_left.png'
-import illustRight from 'assets/img/search_result_illust_right.png'
+import illustLeft from 'assets/img/search_result_illust_left_small.png'
+import illustRight from 'assets/img/illust_3_small.png'
 import 'styles/SearchDetail.scss'
 
 export default class SearchDetail extends Component {
@@ -29,12 +29,6 @@ export default class SearchDetail extends Component {
             주말엔 같이 영화도 즐길 수 있는 정도
           </p>
         </div>
-        <div className="illust-container">
-          <div className="illust">
-            <img src={illustLeft} alt="택배를 받은 남성" className="illust-left" />
-            <img src={illustRight} alt="청소를 하고 있는 남성" className="illust-right" />  
-          </div>
-        </div>
         <div className="opponent-message">
           <div className="head">
             상대가 찾는 Mate
@@ -47,8 +41,10 @@ export default class SearchDetail extends Component {
             </p>
           </div>
         </div>
+        
         <div className="card-container">
           <ul className="card my">
+            <img src={illustLeft} alt="택배를 받은 남성" className="illust-left" />
             <li className="card-head">나의 카드</li>
             <li className="card-detail match">
               <p className="label">성별</p>
@@ -77,6 +73,7 @@ export default class SearchDetail extends Component {
             <li className="card-tail"></li>
           </ul>
           <ul className="card opponent">
+            <img src={illustRight} alt="청소를 하고 있는 남성" className="illust-right" />  
             <li className="card-head">상대의 카드</li>
             <li className="card-detail match">
               <p className="label">성별</p>
