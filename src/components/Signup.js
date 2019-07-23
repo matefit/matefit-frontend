@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { FormCard, Nav } from 'components'
 import 'styles/Signup.scss'
+import { useAuth } from 'contexts/auth';
 
-export default class Signup extends Component {
+class Signup extends Component {
   state = {
     tags: [
       { name: '흡연', selected: false, },
@@ -63,6 +64,14 @@ export default class Signup extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
+
+    const { signup } = this.props
+    const { name, nickname, gender, year, month, day, 
+      phoneFirst, phoneMiddle, phoneLast, email, residence } = this.state.form
+    const birthday = `${year}-${month}-${day}`
+    const phone = `${phoneFirst}-${phoneMiddle}-${phoneLast}`
+
+    signup(email, name, nickname, birthday, phone, gender, residence, '', [])
   }
 
   handleChangeInput = (e) => {
@@ -176,11 +185,13 @@ export default class Signup extends Component {
               }
             </div>
           </FormCard>
-          <Link to="/main">
+          {/* <Link to="/main"> */}
             <button>회원가입 완료</button>
-          </Link>
+          {/* </Link> */}
         </form>
       </div>
     )
   }
 }
+
+export default useAuth(Signup)
