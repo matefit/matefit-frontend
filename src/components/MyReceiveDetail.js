@@ -4,7 +4,7 @@ import illustLeft from 'assets/img/search_result_illust_left_small.png'
 import illustRight from 'assets/img/illust_3_small.png'
 import 'styles/SearchDetail.scss'
 
-export default class SearchDetail extends Component {
+export default class MyReceiveDetail extends Component {
   state = {
     percentage: 50
   }
@@ -103,10 +103,10 @@ export default class SearchDetail extends Component {
           </ul>
         </div>
         <p className="match-description">
-          적절한 메이트를 찾았으며, <span>상대가 수락하면 상대와 당신의 연락처가 서로 공개</span>됩니다.
+          메이트 요청을 받았으며, <span>당신이 수락하면 상대와 당신의 연락처가 서로 공개</span>됩니다.
         </p>
         <button>
-          메이트 요청하기
+          요청 수락하기
         </button>
       </div>
     )

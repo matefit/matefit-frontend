@@ -21,7 +21,7 @@ const SearchCard = ({title, position, percentage, sent, receive, matched }) => {
           </p>
         </div>
         <Link to={{
-          pathname: '/search/detail',
+          pathname: (sent ? '/mypage/sent/detail' : receive ? "/mypage/receive" : matched ? " matched" : ""),
           state: {
           }
         }}>

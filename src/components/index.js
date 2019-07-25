@@ -20,6 +20,9 @@ import MyReceive from './MyReceive';
 import MyInfo from './MyInfo';
 import MatchedMate from './MatchedMate';
 import Upload from './Upload';
+import MyMatchedDetail from './MyMatchedDetail';
+import MySentDetail from './MySentDetail';
+import MyReceiveDetail from './MyReceiveDetail';
 
 
 export {
@@ -28,5 +31,5 @@ export {
   Search, SearchCard,
   SearchDetail, 
   MyPageMenu, MyBookmark, MySent, MyReceive, MyInfo,
-  Upload, MatchedMate,
+  Upload, MatchedMate, MyReceiveDetail, MyMatchedDetail, MySentDetail,
 }
