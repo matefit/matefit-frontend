@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FormCardMain = ({ nickname, location, matching_degree }) => (
   <div className="form-card-main">
@@ -14,7 +15,14 @@ const FormCardMain = ({ nickname, location, matching_degree }) => (
         <div className="content-title">나와 일치정도</div>
         <div className="content-discription">{matching_degree}%</div>
       </div>
-      <button>자세히보기</button>
+      
+      <Link to={{
+        pathname: '/search/detail',
+        state: {
+        }
+      }}>
+        <button>자세히보기</button>
+      </Link>
     </div>
   </div>
 )

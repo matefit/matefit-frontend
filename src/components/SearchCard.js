@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SearchCard = ({title, position, percentage, sent, receive, matched }) => {
   return (
@@ -19,9 +20,15 @@ const SearchCard = ({title, position, percentage, sent, receive, matched }) => {
             { percentage }%
           </p>
         </div>
-        <button>
-          자세히 보기
-        </button>
+        <Link to={{
+          pathname: '/search/detail',
+          state: {
+          }
+        }}>
+          <button>
+            자세히 보기
+          </button>
+        </Link>
       </div>
     </div>
   )

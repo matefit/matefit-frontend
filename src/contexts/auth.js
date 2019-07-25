@@ -35,7 +35,7 @@ class AuthProvider extends Component {
       });
     },
 
-    signup: (email, name, nickname, birthday, phone, sex, location, roomType, hashtags) => {
+    signupRequest: (email, name, nickname, birthday, phone, sex, location, roomType, hashtags) => {
       axios.post('/api/account/signup', {
         email: email,
         name: name,
@@ -79,7 +79,7 @@ function useAuth(WrappedComponent) {
             <WrappedComponent
               token={ state.token }
               kakaoLogin={ actions.kakaoLogin }
-              signup={ actions.signup }
+              signupRequest={ actions.signupRequest }
               logout={ actions.logout }
             />
           )
