@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Nav, FormCardMain } from 'components';
 import { AuthConsumer } from 'contexts/auth';
 import 'styles/Main.scss';
@@ -10,11 +11,60 @@ import mainLine from 'assets/img2/main-line.png';
 import backgroundSquareUp from 'assets/img2/background-square-up.png';
 import btnDown from 'assets/img2/btn-down.png';
 class Main extends Component {
+  state = {
+    form: {
+      rigion: 'everywhere',
+      'room-type': 'everywhere',
+      'birth-visibility': 'dontcare',
+    },
+    tags: [
+      { name: '흡연', selected: false, },
+      { name: '애완동물', selected: false, },
+      { name: '직장인', selected: false, },
+      { name: '학생', selected: false, },
+      { name: '코골이', selected: false, },
+      { name: '아침형 인간', selected: false, },
+      { name: '야행성', selected: false, },
+      { name: '야식', selected: false, },
+      { name: '조용한 사람', selected: false, },
+      { name: '사교적인 사람', selected: false, },
+      { name: '다이어트 중', selected: false, },
+    ],
+  }
+
+  handleChangeInput = (e) => {
+    const { name, value } = e.target
+
+    this.setState(state => ({
+      ...state,
+      form: {
+        ...state.form,
+        [name]: value,
+      },
+    }))
+  }
+
+  
+  toggleTag = (e) => {
+    const clickedTag = e.target.getAttribute('name')
+    const { tags } = this.state
+    const newTags = [...tags]
+    const tagIndex = newTags.findIndex(tag => tag.name === clickedTag);
+    if (tagIndex >= 0) {
+      newTags[tagIndex].selected = !newTags[tagIndex].selected
+  
+      this.setState({
+        tags: newTags
+      })
+    }
+  }
+
   render() {
+    const { form, tags } = this.state
     return (
       <AuthConsumer>
         {
-          ({ state }) => (
+          () => (
             <div className="main-container">
               <Nav />
               <img className="background-square-up" src={backgroundSquareUp} alt="" />
@@ -47,23 +97,49 @@ class Main extends Component {
                     </div>
 
                     <div className="main-search-bar-select-box gender">
-                      <label className="radio-label"><input type="radio" name="birth-visibility" value="public" />여성</label>
-                      <label className="radio-label"><input type="radio" name="birth-visibility" value="private" defaultChecked />남성</label>
-                      <label className="radio-label"><input type="radio" name="birth-visibility" value="private" defaultChecked />무관</label>
+                      <label className="radio-label">
+                        <input type="radio" name="birth-visibility" value="female" 
+                          checked={form["birth-visibility"] === 'female'}
+                          onChange={this.handleChangeInput}
+                        />
+                        여성
+                      </label>
+                      <label className="radio-label">
+                        <input type="radio" name="birth-visibility" value="male"
+                          checked={form["birth-visibility"] === 'male'}
+                          onChange={this.handleChangeInput}
+                        />
+                        남성
+                      </label>
+                      <label className="radio-label">
+                        <input type="radio" name="birth-visibility" value="dontcare" 
+                          checked={form["birth-visibility"] === 'dontcare'}
+                          onChange={this.handleChangeInput}
+                        />
+                        무관
+                      </label>
                     </div>
 
                     <div className="main-search-bar-select-box">
                       <select id="room-type" name="room-type" htmlFor="room-type" onChange={this.handleChangeInput}>
                         <option defaultValue value="everywhere">모두</option>
-                        <option value="seoul">서울</option>
+                        <option value="twoRoom">투룸</option>
+                        <option value="shareHouse">쉐어하우스</option>
+                        <option value="dormitory">기숙사</option>
+                        <option value="apt">아파트</option>
+                        <option value="other">기타</option>
                       </select>
                     </div>
-
-                    <button>Search</button>
-
+                    <Link to={{
+                      pathname: '/search',
+                      state: {
+                        filter: form,
+                        tags: tags,
+                      }
+                    }}>
+                      <button onClick={this.search}>Search</button>
+                    </Link>
                   </div>
-
-
                 </div>
                 <div className="main-search-tag-group">
                   <div className="main-search-tag-title">
@@ -71,35 +147,38 @@ class Main extends Component {
                     내가 원하는 룸메
                   </div>
                   <div className="main-search-tag-selected">
-                    <div className="tag selected">#비흡연</div>
-                    <div className="tag selected">#애완견 가능</div>
-                    <div className="tag selected">#직장인</div>
-
+                    {
+                      tags.map((tag, index) => {
+                        if (tag.selected) {
+                          return (
+                            <div className={tag.selected ? "tag selected" : "tag unselected"}
+                              name={tag.name} key={index}
+                              onClick={this.toggleTag}
+                            >
+                              #{tag.name}
+                            </div>
+                          )
+                        } else {
+                          return <React.Fragment key={index} />
+                        }
+                      })
+                    }
                   </div>
                   <button className="tags-drop"><img src={btnDown} alt="" /></button>
                   <div className="main-search-tags">
-                    <div className="tag unselected">#비흡연</div>
-                    <div className="tag unselected">#애완견 가능</div>
-                    <div className="tag unselected">#직장인</div>
-                    <div className="tag selected">#비흡연</div>
-                    <div className="tag selected">#애완견 가능</div>
-                    <div className="tag selected">#직장인</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-                    <div className="tag unselected">#빠른입주</div>
-
+                  <div className="tag-group">
+                    {
+                      tags.map((tag, index) => {
+                        return (
+                          <div className={tag.selected ? "tag selected" : "tag unselected"}
+                            name={tag.name} key={index}
+                            onClick={this.toggleTag}
+                          >
+                            #{tag.name}
+                          </div>
+                        )
+                      })
+                    }
                   </div>
                 </div>
                 <div className="main-matefit-info">
@@ -128,9 +207,10 @@ class Main extends Component {
                     <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
                     <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
                   </div>
+                  </div>
                 </div>
               </div>
-
+            
             </div>
           )
         }

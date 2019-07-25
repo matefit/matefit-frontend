@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FormCard, Nav } from 'components'
 import 'styles/Signup.scss'
 import { useAuth } from 'contexts/auth';
@@ -9,29 +9,15 @@ class Signup extends Component {
     tags: [
       { name: '흡연', selected: false, },
       { name: '애완동물', selected: false, },
-      { name: '원룸', selected: false, },
-      { name: '투룸', selected: false, },
-      { name: '쉐어하우스', selected: false, },
-      { name: '심한 잠버릇', selected: false, },
+      { name: '직장인', selected: false, },
+      { name: '학생', selected: false, },
+      { name: '코골이', selected: false, },
+      { name: '아침형 인간', selected: false, },
       { name: '야행성', selected: false, },
-      { name: 'Tag 8', selected: false, },
-      { name: 'Tag 9', selected: false, },
-      { name: 'Tag 10', selected: false, },
-      { name: 'Tag 11', selected: false, },
-      { name: 'Tag 12', selected: false, },
-      { name: 'Tag 13', selected: false, },
-      { name: 'Tag 14', selected: false, },
-      { name: 'Tag 15', selected: false, },
-      { name: 'Tag 16', selected: false, },
-      { name: 'Tag 17', selected: false, },
-      { name: 'Tag 18', selected: false, },
-      { name: 'Tag 19', selected: false, },
-      { name: 'Tag 20', selected: false, },
-      { name: 'Tag 21', selected: false, },
-      { name: 'Tag 22', selected: false, },
-      { name: 'Tag 23', selected: false, },
-      { name: 'Tag 24', selected: false, },
-      { name: 'Tag 25', selected: false, },
+      { name: '야식', selected: false, },
+      { name: '조용한 사람', selected: false, },
+      { name: '사교적인 사람', selected: false, },
+      { name: '다이어트 중', selected: false, },
     ],
     form: {
       name: '',
@@ -65,13 +51,13 @@ class Signup extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
 
-    const { signup } = this.props
-    const { name, nickname, gender, year, month, day, 
-      phoneFirst, phoneMiddle, phoneLast, email, residence } = this.state.form
-    const birthday = `${year}-${month}-${day}`
-    const phone = `${phoneFirst}-${phoneMiddle}-${phoneLast}`
+    // const { signup } = this.props
+    // const { name, nickname, gender, year, month, day, 
+    //   phoneFirst, phoneMiddle, phoneLast, email, residence } = this.state.form
+    // const birthday = `${year}-${month}-${day}`
+    // const phone = `${phoneFirst}-${phoneMiddle}-${phoneLast}`
 
-    signup(email, name, nickname, birthday, phone, gender, residence, '', [])
+    // signup(email, name, nickname, birthday, phone, gender, residence, '', [])
   }
 
   handleChangeInput = (e) => {
@@ -185,9 +171,9 @@ class Signup extends Component {
               }
             </div>
           </FormCard>
-          {/* <Link to="/main"> */}
+          <Link to="/main">
             <button>회원가입 완료</button>
-          {/* </Link> */}
+          </Link>
         </form>
       </div>
     )

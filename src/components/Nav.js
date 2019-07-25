@@ -28,10 +28,10 @@ class Nav extends Component {
           <Link to="/main">
             <img src={logo} alt="Mate Fit!" className="matefit-logo-nav" />
           </Link>
+          <ul className="nav-menu">
           {
             signup ? <></>
-            :
-            <ul className="nav-menu">
+            : <>
               <li className="nav-menu-item">
                 <div className="noti-icon-container" onClick={this.toggleNoti}>
                   <img src={isNotiExists ? bellActive : bell} alt="알림" className="notification" />
@@ -47,11 +47,12 @@ class Nav extends Component {
               <Link to="/mypage">
                 <li className="nav-menu-item">마이페이지</li>
               </Link>
+            </>
+          }
               <Link to="/" onClick={logout}>
                 <li className="nav-menu-item">로그아웃</li>
               </Link>
-            </ul>
-          }
+          </ul>
         </div>
       </nav>
     )

@@ -37,6 +37,10 @@
 .form-card-main{
   display: inline-block;
   font-family: 'KHNPHandotum';
+
+  a {
+    text-decoration: none;
+  }
   
   .top {
     width: 400px;
@@ -239,6 +243,12 @@
     width: 100%;
     height: 500px;
     background-color: #f0f2f1;
+
+    p {
+      margin: 0;
+      line-height: 500px;
+      text-align: center;
+    }
   }
 
   .noti-list-item {

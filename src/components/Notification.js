@@ -6,14 +6,14 @@ import notiBlue from 'assets/img/noti-blue.png'
 export default class Notification extends Component {
   state = {
     notis: [
-      {
-        title: '새 메이트 요청을 받았습니다.',
-        type: 'receive'
-      },
-      {
-        title: '내가 보낸 요청에 답변이 있습니다.',
-        type: 'reply'
-      },
+      // {
+      //   title: '새 메이트 요청을 받았습니다.',
+      //   type: 'receive'
+      // },
+      // {
+      //   title: '내가 보낸 요청에 답변이 있습니다.',
+      //   type: 'reply'
+      // },
     ]
   }
   render() {
