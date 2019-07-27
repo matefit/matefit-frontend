@@ -13,24 +13,24 @@ export default class MyReceive extends Component {
           <MyPageMenu menu="receive"/>
           <div className="my-card-group">
             <SearchCard receive
-              title="메이트 닉네임"
+              title="화난 콘"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={52}
             />
             <SearchCard receive
-              title="메이트 닉네임"
+              title="배불뚝 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
             <SearchCard receive
-              title="디프만"
+              title="씩씩거리는 무지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={69}
             />
             <SearchCard receive
-              title="메이트 닉네임"
+              title="신난 어피치"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={59}
             />
           </div>
         </div>

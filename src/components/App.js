@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-import { Intro, Signup, Main, Upload, Search, SearchDetail,MyBookmark,MyReceive,MySent,MatchedMate } from 'components';
+import { Intro, Signup, Main, Upload, Search, SearchDetail, MyBookmark, MyReceive, MySent, MatchedMate, MyInfo } from 'components';
 import { AuthProvider } from 'contexts/auth';
 import { KakaoAppKey } from 'config';
+
 import 'styles/App.scss';
 
 const Kakao = window.Kakao;
@@ -11,7 +12,7 @@ const Kakao = window.Kakao;
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
     <Route {...rest} render={props => (
-      !localStorage.getItem('access_token') ? 
+      !localStorage.getItem('access_token') ?
         <Redirect to={{
           pathname: '/',
           state: { from: props.location }
@@ -42,6 +43,7 @@ function App() {
         <PrivateRoute path="/mypage/receive" component={MyReceive} />
         <PrivateRoute path="/mypage/sent" component={MySent} />
         <PrivateRoute path="/mypage/matched" component={MatchedMate} />
+        <PrivateRoute path="/mypage/info" component={MyInfo} />
       </Router>
     </AuthProvider>
   );

@@ -19,7 +19,7 @@ const MyPageMenu = ({ menu }) => (
             <Link to="/mypage/matched">매칭된 메이트</Link>
         </div>
         <div className={`menu-element ${menu==="info"?"selected":null}`}>
-            <Link to="/mypage">내 정보 관리</Link>
+            <Link to="/mypage/info">내 정보 관리</Link>
         </div>
     </div>
     <div className="illust">

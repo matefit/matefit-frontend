@@ -8,17 +8,17 @@ export default class SearchDetail extends Component {
   state = {
     percentage: 50
   }
-
+  
   render() {
     const { percentage } = this.state
-    
+   
     return (
       <div className="search-detail-container">
         <Nav />
         <div className="result">
-          <h2>이 메이트가 당신과 맞을 확률은</h2> 
+          <h2>이 메이트가 당신과 맞을 확률은</h2>
           <svg width="380" height="380">
-            <circle r="190" cx="190" cy="190" strokeDasharray={ 1193.8 / 100 * percentage + ' 1193.8' } className="circle-graph" />
+            <circle r="190" cx="190" cy="190" strokeDasharray={1193.8 / 100 * percentage + ' 1193.8'} className="circle-graph" />
             <circle r="160" cx="190" cy="190" className="circle-front" />
             <text x="162" y="50" fill="#eb6958" className="percentage">
               {percentage}%
@@ -41,7 +41,7 @@ export default class SearchDetail extends Component {
             </p>
           </div>
         </div>
-        
+
         <div className="card-container">
           <ul className="card my">
             <img src={illustLeft} alt="택배를 받은 남성" className="illust-left" />
@@ -73,7 +73,7 @@ export default class SearchDetail extends Component {
             <li className="card-tail"></li>
           </ul>
           <ul className="card opponent">
-            <img src={illustRight} alt="청소를 하고 있는 남성" className="illust-right" />  
+            <img src={illustRight} alt="청소를 하고 있는 남성" className="illust-right" />
             <li className="card-head">상대의 카드</li>
             <li className="card-detail match">
               <p className="label">성별</p>

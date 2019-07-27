@@ -13,24 +13,24 @@ export default class MatchedMate extends Component {
           <MyPageMenu menu="matched"/>
           <div className="my-card-group">
             <SearchCard matched
-              title="메이트 닉네임"
+              title="화난 콘"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={58}
             />
             <SearchCard matched
-              title="메이트 닉네임"
+              title="신난 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={64}
             />
             <SearchCard matched
-              title="디프만"
+              title="애교뿜뿜 라이언"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={52}
             />
             <SearchCard matched
-              title="메이트 닉네임"
+              title="씩씩거리는 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
           </div>
         </div>
