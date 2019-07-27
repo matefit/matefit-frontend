@@ -164,7 +164,7 @@ class Main extends Component {
                       })
                     }
                   </div>
-                  <button className="tags-drop"><img src={btnDown} alt="" /></button>
+                  
                   <div className="main-search-tags">
                   <div className="tag-group">
                     {
