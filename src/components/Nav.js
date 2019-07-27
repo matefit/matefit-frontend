@@ -22,6 +22,7 @@ class Nav extends Component {
   render() {
     const { isNotiOpened, isNotiExists } = this.state
     const { signup, logout } = this.props
+    
     return (
       <nav className="nav">
         <div className="nav-container">

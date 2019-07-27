@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { FormCard, Nav, Header, SearchCard, MyPageMenu } from 'components'
+import { FormCard, Nav, Header, MyPageMenu } from 'components'
 import 'styles/MyPage.scss'
 import 'styles/Signup.scss'
 

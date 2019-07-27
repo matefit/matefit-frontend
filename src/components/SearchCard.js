@@ -20,9 +20,19 @@ const SearchCard = ({title, position, percentage, sent, receive, matched }) => {
             { percentage }%
           </p>
         </div>
+        {
+          matched &&
+          <div className="card-content">
+            <h4>연락처</h4>
+            <p>
+              010-XXXX-XXXX
+            </p>
+          </div>
+        }
         <Link to={{
           pathname: '/search/detail',
           state: {
+            matched: matched,
           }
         }}>
           <button>

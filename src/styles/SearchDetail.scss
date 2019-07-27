@@ -1,5 +1,5 @@
 .search-detail-container {
-  overflow-x: hidden;
+  overflow: hidden;
 
   button {
     font-family: 'KHNPHandotum', sans-serif;
@@ -12,6 +12,11 @@
     display: block;
     margin: 57px auto 176px auto;
     cursor: pointer;
+
+    &.clicked {
+      background-color: #f0f2f1;
+      color: #707070;
+    }
   }
   
   // @keyframes fillup {

@@ -71,7 +71,7 @@ class AuthProvider extends Component {
 }
 
 function useAuth(WrappedComponent) {
-  return function UseAuth() {
+  return function UseAuth(props) {
     return (
       <AuthConsumer>
         {
@@ -81,6 +81,7 @@ function useAuth(WrappedComponent) {
               kakaoLogin={ actions.kakaoLogin }
               signupRequest={ actions.signupRequest }
               logout={ actions.logout }
+              { ...props } 
             />
           )
         }

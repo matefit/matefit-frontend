@@ -9,7 +9,7 @@ import infoCenter from 'assets/img2/info-center.png';
 import infoRight from 'assets/img2/info-right.png';
 import mainLine from 'assets/img2/main-line.png';
 import backgroundSquareUp from 'assets/img2/background-square-up.png';
-import btnDown from 'assets/img2/btn-down.png';
+
 class Main extends Component {
   state = {
     form: {

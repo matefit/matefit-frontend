@@ -21,11 +21,11 @@ class Intro extends Component {
         </div>
         <footer>
           <ul className="footer-menu">
-            <li>고객센터</li>
+            {/* <li>고객센터</li>
             <li>Item 2</li>
             <li>Item 3</li>
             <li>Item 4</li>
-            <li>Item 5</li>
+            <li>Item 5</li> */}
           </ul>
         </footer>
       </div>

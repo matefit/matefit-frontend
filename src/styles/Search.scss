@@ -185,6 +185,10 @@
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
 
+  &.matched {
+    height: 560.7px;
+  }
+
   .head {
     border-top-right-radius: 100px;
     background-color: #F1F4F8;
