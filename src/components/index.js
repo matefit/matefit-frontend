@@ -21,7 +21,6 @@ import MyInfo from './MyInfo';
 import MatchedMate from './MatchedMate';
 import Upload from './Upload';
 
-
 export {
   Header, Nav, MateCard, FormCard, FormCardMain, Notification,
   Intro, Signup, Main,

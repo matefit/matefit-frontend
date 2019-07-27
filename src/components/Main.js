@@ -164,7 +164,7 @@ class Main extends Component {
                       })
                     }
                   </div>
-                  <button className="tags-drop"><img src={btnDown} alt="" /></button>
+                  
                   <div className="main-search-tags">
                   <div className="tag-group">
                     {
@@ -190,7 +190,7 @@ class Main extends Component {
                   <div className="main-matefit-info-element">
                     <div className="info-img-wrapper">
                       <img className="center" src={infoCenter} alt="" />
-                      <div className="element-text">2094<span>명</span></div>
+                      <div className="element-text">100<span>명</span></div>
                     </div>
                     <div>MateFit! 이용자 수</div>
                   </div>
@@ -198,14 +198,14 @@ class Main extends Component {
                   <div className="main-matefit-info-element">
                     <div className="info-img-wrapper">
                       <img className="right" src={infoRight} alt="" />
-                      <div className="element-text">149<span>명</span></div>
+                      <div className="element-text">51<span>명</span></div>
                     </div>
                     <div>메이트를 만난<br />이용자 수</div>
                   </div>
                   <div className="formcards-group">
-                    <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
-                    <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
-                    <FormCardMain nickname="메이트 닉네임" location="서울특별시 강남구" matching_degree="50" />
+                    <FormCardMain nickname="화난 무지" location="서울특별시 강남구" matching_degree="75" />
+                    <FormCardMain nickname="벌 서는 라이언" location="서울특별시 강남구" matching_degree="63" />
+                    <FormCardMain nickname="뿅뿅 네오" location="서울특별시 강남구" matching_degree="51" />
                   </div>
                   </div>
                 </div>

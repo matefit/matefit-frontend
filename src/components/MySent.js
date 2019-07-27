@@ -13,24 +13,24 @@ export default class MySent extends Component {
           <MyPageMenu menu="sent"/>
           <div className="my-card-group">
             <SearchCard sent
-              title="메이트 닉네임"
+              title="졸린 무지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={58}
             />
             <SearchCard sent
-              title="메이트 닉네임"
+              title="엄지척 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={64}
             />
             <SearchCard sent
-              title="디프만"
+              title="화난 콘"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={52}
             />
             <SearchCard sent
-              title="메이트 닉네임"
+              title="배불뚝 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
           </div>
         </div>

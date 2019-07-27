@@ -13,24 +13,24 @@ export default class MyBookmark extends Component {
           <MyPageMenu menu="bookmark"/>
           <div className="my-card-group">
             <SearchCard
-              title="메이트 닉네임"
+              title="배불뚝 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
             <SearchCard
-              title="메이트 닉네임"
+              title="씩씩거리는 무지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={69}
             />
             <SearchCard
-              title="메이"
+              title="신난 어피치"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={59}
             />
             <SearchCard
-              title="메이트 닉네임"
+              title="애교뿜뿜 라이언"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
           </div>
         </div>

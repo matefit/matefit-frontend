@@ -131,39 +131,39 @@ export default class Search extends Component {
           </aside>
           <div className="search-result">
             <SearchCard 
-              title="메이트 닉네임"
+              title="졸린 무지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={58}
             />
             <SearchCard 
-              title="메이트 닉네임"
+              title="엄지척 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={64}
             />
             <SearchCard 
-              title="메이트 닉네임"
+              title="화난 콘"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={52}
             />
             <SearchCard
-              title="메이트 닉네임"
+              title="배불뚝 제이지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
             <SearchCard
-              title="메이트 닉네임"
+              title="씩씩거리는 무지"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={69}
             />
             <SearchCard
-              title="메이"
+              title="신난 어피치"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={59}
             />
             <SearchCard
-              title="메이트 닉네임"
+              title="애교뿜뿜 라이언"
               position="서울특별시 강남구"
-              percentage={50}
+              percentage={71}
             />
           </div>
         </div>
