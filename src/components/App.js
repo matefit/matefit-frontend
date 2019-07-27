@@ -19,7 +19,7 @@ const options = {
 
 const Kakao = window.Kakao;
 
-/* Login이 Token 방식일 때를 가정하여 만든 PrivateRoute */
+/* Login이 Token 방식일 때를 가정하여 만든 Route */
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
     <Route {...rest} render={props => (
@@ -43,19 +43,19 @@ function App() {
       <AlertProvider template={AlertTemplate} {...options}>
         <Router>
           <Route exact path="/" component={Intro} />
-          <PrivateRoute exact path="/signup" component={Signup} />
-          <PrivateRoute path="/main" component={Main} />
-          <PrivateRoute path="/upload" component={Upload} />
-          <PrivateRoute exact path="/search" component={Search} />
-          <PrivateRoute path="/search/detail" component={SearchDetail} />
+          <Route exact path="/signup" component={Signup} />
+          <Route path="/main" component={Main} />
+          <Route path="/upload" component={Upload} />
+          <Route exact path="/search" component={Search} />
+          <Route path="/search/detail" component={SearchDetail} />
           <Switch>
             <Redirect from="/mypage" to="/mypage/bookmark" />
           </Switch>
-          <PrivateRoute path="/mypage/bookmark" component={MyBookmark} />
-          <PrivateRoute path="/mypage/receive" component={MyReceive} />
-          <PrivateRoute path="/mypage/sent" component={MySent} />
-          <PrivateRoute path="/mypage/matched" component={MatchedMate} />
-          <PrivateRoute path="/mypage/info" component={MyInfo} />
+          <Route path="/mypage/bookmark" component={MyBookmark} />
+          <Route path="/mypage/receive" component={MyReceive} />
+          <Route path="/mypage/sent" component={MySent} />
+          <Route path="/mypage/matched" component={MatchedMate} />
+          <Route path="/mypage/info" component={MyInfo} />
         </Router>
       </AlertProvider>
     </AuthProvider>
